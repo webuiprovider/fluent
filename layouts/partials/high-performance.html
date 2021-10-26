@@ -1,0 +1,36 @@
+{{ if .Params.highPerformance.enabled }}
+{{$data := .Params.highPerformance }}
+
+<section class="section high-performance">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">                                   
+                <div class="section-heading text-center">
+                    <h4>{{$data.heading}}</h4>
+                    {{with  $data.subHeading }}
+                     <h5>{{.}}</h5> 
+                    {{end}}
+                </div>
+            </div>
+        </div>
+
+        <div class="row lists">
+            {{range $data.lists }}  
+                <div class="col-md-4 col-sm-6"> 
+                    <div class="high-performance-list text-{{.align}}">
+                        <div class="icon" style="order:{{.imagePosition}}">
+                            <img src="{{.image}}" alt="{{.heading}}}" class="img-fluid">
+                        </div>
+                        <div class="info">
+                            <h4 class="heading">{{.heading  | safeHTML  }}</h4>
+                            <p>{{.description | safeHTML }}</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            {{end}}
+        </div>
+    </div>
+</section>
+{{end}}

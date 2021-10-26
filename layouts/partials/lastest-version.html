@@ -1,0 +1,31 @@
+{{if .Params.latestVer }}
+<section class="section latest-ver">
+    <div class="container">
+        <div class="row">
+            <div class="col"><h4>Lastest Version</h4></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row ver-box">
+                    <div class="col-md-7"></div>
+                    <div class="col-md-5 info">
+                        <h6>{{.Params.latestVer.subHeading}}</h6>
+                        <h3>{{.Params.latestVer.heading}}</h3>
+                        <p>{{.Params.latestVer.text}}</p>
+                        <div class="mt-4"><a href="{{.Params.latestVer.btnUrl}}" class="btn-gradient">{{.Params.latestVer.btnText}}</a></div> 
+                        <small>{{.Params.latestVer.smallText | safeHTML}}</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col text-right">
+                <a href="#" class="read">::Read Documentation</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+{{ end }}

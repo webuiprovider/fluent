@@ -1,0 +1,6 @@
+- name: "John Source"
+  company: "Sofware Engineer Lfyt"
+  message: "Fluent Bit is an open source Log Processor and Forwarder which allows you to collect any data like metrics and logs from different sources, enrich them with filters and send them to multiple destinations. It's the preferred choice for containerized environments like Kubernetes."
+- name: "John Source- vivek"
+  company: "Sofware Engineer Lfyt"
+  message: "“Fluent Bit is an open source Log Processor and Forwarder which allows you to collect any data like metrics and logs from different sources, enrich them with filters and send them to multiple destinations. It's the preferred choice for containerized environments like Kubernetes.”"

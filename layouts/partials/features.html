@@ -1,0 +1,29 @@
+{{ if .Params.features.enabled }}
+{{$data := .Params.features }}
+<section class="section features mt-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">                                   
+                <div class="section-heading text-center">
+                    <h4>{{$data.heading}}</h4>
+                    {{with  $data.subHeading }}
+                     <h5>{{. | safeHTML}}</h5> 
+                    {{end}}
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            {{range $data.lists }}  
+                <div class="col-md-4 col-sm-6 features-list mb-4">  
+                    <div class="list-box">
+                        <div class="heading">{{.heading}}</div>
+                        <p>{{.description}}</p>
+                        <p class="link"><a href="{{.link}}">{{.linkText}} <i class="fa fa-long-arrow-right"></i></a></p>
+                    </div>  
+                </div>
+            {{end}}
+        </div>
+    </div>
+</section>
+{{end}}

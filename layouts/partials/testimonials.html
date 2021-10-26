@@ -1,0 +1,64 @@
+{{ if .Params.testimonials.enabled }}
+{{$data := .Params.testimonials }}
+
+<section class="testimonials-outter">
+
+<section class="section testimonials mt-5">
+    <div class="container">
+      <div class="row">
+          <div class="col-12">                                   
+              <div class="section-heading text-center">
+                  <!-- <h4>{{$data.heading}}</h4> -->
+                  {{with  $data.subHeading }}
+                   <h5>{{.}}</h5> 
+                  {{end}}
+              </div>
+          </div>
+      </div>
+        <div class="row">
+            <div class="col-12">            
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      {{range $index, $ele := .Site.Data.testimonial }}
+                       
+                        <li data-target="#myCarousel" data-slide-to="{{$index}}" class="{{if eq $index 0}} active {{end}}"></li>
+
+                      {{end}}
+                  </ol>
+                  <div class="carousel-inner">
+                    {{range $index, $ele := .Site.Data.testimonial }}
+                        <div class="carousel-item {{if eq $index 0}} active {{end}}" >                            
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <p> {{$ele.message }} </p>
+                                    <div class="msg-info">
+                                        <span>{{$ele.name}}</span>
+                                        {{$ele.company}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    {{end}}
+
+
+
+                  </div>
+                  <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a> -->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+</section>
+{{end}}

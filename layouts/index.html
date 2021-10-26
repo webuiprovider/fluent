@@ -1,0 +1,26 @@
+{{ define "main" }}
+    {{- partial "header.html" . -}}  
+    {{- partial "hero.html" . -}}  
+    {{- partial "howitswork.html" . -}}  
+    {{- partial "brand.html" . -}}  
+    {{- partial "performance.html" . -}}  
+    {{- partial "cta-boxed.html" . -}}    
+    {{- partial "high-performance.html" . -}}    
+    
+    
+    {{- partial "testimonials.html" . -}}  
+    {{- partial "features.html" . -}}  
+    {{- partial "cta.html" . -}}
+    
+    {{if .Content }}
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        {{ .Content}}     
+                    </div>
+                </div>
+            </div>
+        </section>
+    {{end}}
+{{ end }}

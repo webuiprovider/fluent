@@ -1,0 +1,13 @@
+
+{{ define "main" }}
+
+    {{- partial "header.html" . -}}  
+    {{- partial "hero-inner.html" . -}}  
+
+    
+
+    {{ partial "blog.html" . }}
+
+    
+    {{.Content}}
+{{ end }}

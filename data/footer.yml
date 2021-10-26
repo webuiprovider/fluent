@@ -1,0 +1,28 @@
+- linkHeading:  Overview 
+  lists:
+  - text: What we Do
+    url: "#"    
+- linkHeading:  Resources 
+  lists:
+  - text: Documentation
+    url: "#"    
+  - text: Online Training Course 
+    url: "#"     
+  - text: Guides and Recipe
+    url: "#"   
+  - text: Videos
+    url: "#"  
+  - text: Slides
+    url: "#"
+- linkHeading:  Community 
+  lists:
+  - text: Blog
+    url: "#"   
+  - text: Community List
+    url: "#"
+  - text: Related Projects
+    url: "#"
+- linkHeading:  Download 
+  button: DOWNLOAD NOW v1.8.2 
+  buttonUrl: "#"
+  version: released on Jul 20, 2021

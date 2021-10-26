@@ -1,0 +1,31 @@
+{{ "<!-- blog single -->" | safeHTML }}
+<section class="blog-single">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 py-100 py-xs-50">
+                <div class="">
+                    <!-- <img class="img-fluid w-100 rounded-top" src="{{ .Params.image | absURL }}" alt="blog-image"> -->
+                    <div class="p-4">
+                        <!-- <h3>{{ .Title }}</h3>
+                        <ul class="list-inline d-block pb-4 border-bottom mb-3">
+                            <li class="list-inline-item text-color">Posted By {{ .Params.Author }}</li>
+                            <li class="list-inline-item text-color">On {{ .PublishDate.Format "02 Jan" }}</li>
+                            <li class="list-inline-item text-color">Tag:
+                                {{ range .Params.Tags }}
+                                <a class="text-color" href="{{ "tags/" | absURL }}{{ . | lower }}">{{ . }}</a>
+                                {{ end }}
+                            </li>
+                        </ul> -->
+                        <h4>{{ .Params.description }}</h4>
+                        <div class="post-content">
+                            {{ .Content }}
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            {{ partial "sidebar.html" . }}
+            
+        </div>
+    </div>
+</section>
+{{ "<!-- /blog-single -->" | safeHTML }}

@@ -1,0 +1,28 @@
+{{ if .Params.brand.enabled }}
+{{$data := .Params.brand }}
+
+<section class="section">
+    <div class="container">
+        <div class="row mb-3 mb-md-5">
+            <div class="col-12">                                   
+                <div class="section-heading text-center">
+                    <h4>{{$data.heading}}</h4>
+                    {{with  $data.subHeading }}
+                     <h5>{{.}}</h5> 
+                    {{end}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12"> 
+                <ul class="brand-list">
+                    {{range .Site.Data.brand }}  
+                        <li><img src="{{.logo}}" alt="{{.name}}"></li>
+                    {{end}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{end}}

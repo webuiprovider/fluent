@@ -1,0 +1,26 @@
+  {{ $child_pages := union .Sections .Pages }}
+  <div class="collapse submenu" id="{{  replace .RelPermalink "/" "-" }}">
+    
+    <ul class="menu-list">
+      {{ range $child_pages.ByTitle }}
+      <li class="menu-list-item">                                    
+        
+        <!-- The data bs target doesn't like forward slashes, replace all with hyphens instead -->
+        <div class="menu-chevron-link-wrapper">
+          {{ if or (.Sections) (.Pages) }}
+          <div class="menu-chevron"></div>
+          {{ else }}
+          <!-- This page does not contain any children, so don't render a button and call the recursive menu again, just render a link-->
+          <div class="menu-chevron hidden"></div>
+          {{ end }}
+          <a class="menu-link" aria-expanded="false" href="{{.Permalink}}">
+            {{ .Title }}
+          </a>
+        </div>
+        {{ if or (.Sections) (.Pages) }}
+        {{ partial "menu_recursive.html" . }}
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </div>

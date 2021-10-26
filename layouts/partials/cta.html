@@ -1,0 +1,24 @@
+{{ if .Params.cta.enabled }}
+{{$data := .Params.cta }}
+
+<section class="section mt-5">
+    <div class="container ">
+        <div class="row mb-5">
+            <div class="col-12 cta" style="background-image: url({{$data.image}});">                                   
+                <div class="cta-info">                   
+                     <h4>{{$data.heading}}</h4>
+                     <p>{{$data.subHeading}}</p> 
+                     <form class="">
+                        <div class="input-group subscribe">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-theme" type="submit">Send</button>
+                            </span>
+                        </div>
+                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{  end}}

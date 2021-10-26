@@ -1,0 +1,6 @@
+{{- $children := split .Inner "--break-me-here--" -}}
+      <div class="doc-col">
+          {{- index $children 0 | safeHTML -}}
+      </div>
+
+

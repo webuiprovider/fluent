@@ -1,0 +1,19 @@
+{{ if .Params.hero.enabled }}
+{{$data := .Params.hero }}
+<section class="hero">
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <p>{{$data.tag | safeHTML}}</p>
+            <h1>{{$data.heading | safeHTML}}</h1>
+            <p class="sub-heading">{{$data.subHeading | safeHTML}}</p>
+            <p><a href="{{$data.btnUrl | safeHTML}}" class="btn btn-primary">{{$data.btnText | safeHTML}}</a></p>
+            <p class="ver">{{$data.version | safeHTML}}</p>   
+            <a href="{{$data.noteUrl | safeHTML}}" class="read-link">{{$data.noteText | safeHTML}}</a>
+
+
+        </div>
+    </div>
+</div>
+</section>
+{{ end }}

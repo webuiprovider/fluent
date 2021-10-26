@@ -1,0 +1,228 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Fluentbit, High Performance"
+
+
+[params]
+email = ""
+logo = "/images/logo.svg"
+logo2 = "/images/logo-white.svg"
+footer_logo = "/images/footer-logo.svg"
+copyright = "© 2021 Fluent Bit. All rights reserved"
+	         	         
+    [[menu.main]]
+        url = "/overview/"
+        name = "Overview"
+        weight = 1
+    [[menu.main]]
+        identifier = "documentation"
+        url = "/documentation/"
+        name = "Documentation"
+        weight = 2
+
+        [[menu.main]]
+            parent = "documentation"
+            name = "v0.10"
+            url = "/documentation/v0.10/"
+            weight = 10
+        [[menu.main]]
+            parent = "documentation"
+            name = "v0.11"
+            url = "/documentation/v0.11/"
+            weight = 10
+        [[menu.main]]
+            parent = "documentation"
+            name = "v0.12"
+            url = "/documentation/v0.12/"
+            weight = 10
+        [[menu.main]]
+            parent = "documentation"
+            name = "v0.13"
+            url = "/documentation/v0.13/"
+            weight = 10
+        [[menu.main]]
+            parent = "documentation"
+            name = "v0.14"
+            url = "/documentation/v0.14/"
+            weight = 10
+        [[menu.main]]
+            parent = "documentation"
+            name = "v1.0"
+            url = "/documentation/v1.0/"
+            weight = 10
+        [[menu.main]]
+            parent = "documentation"
+            name = "v1.1"
+            url = "/documentation/v1.1/"
+            weight = 10
+        [[menu.main]]
+            parent = "documentation"
+            name = "v1.2"
+            url = "/documentation/v1.2/"
+            weight = 10
+        [[menu.main]]
+            parent = "documentation"
+            name = "v1.3"
+            url = "/documentation/v1.3/"
+            weight = 10
+        [[menu.main]]
+            parent = "documentation"
+            name = "v1.4"
+            url = "/documentation/v1.4/"
+            weight = 10            
+        [[menu.main]]
+            parent = "documentation"
+            name = "v1.5"
+            url = "/documentation/v1.5/"
+            weight = 10
+        [[menu.main]]
+            parent = "documentation"
+            name = "v1.6"
+            url = "/documentation/v1.6/"
+            weight = 10
+
+    [[menu.main]]
+        identifier = "About"
+        url = "/about/"
+        name = "About"
+        weight = 3
+
+    [[menu.main]]
+        identifier = "blog"
+        url = "/blog/"
+        name = "Blog"
+        weight = 4
+    
+
+    [[menu.main]]
+        identifier = "slack"
+        url = "/slack/"
+        name = "slack"
+        weight = 5
+        pre = "/images/slack.svg"
+        slack = "/images/slack-w.svg"
+
+    
+    [[params.footer.column]]
+        url = "#"
+        name = "Terms & Conditions"
+        weight = 1
+
+
+    [[params.footer.bottom]]
+        url = "#"
+        name = "Terms & Conditions"
+        weight = 1
+    [[params.footer.bottom]]
+        url = "#"
+        name = "Privacy Policy"
+        weight = 2
+    [[params.footer.bottom]]
+        url = "#"
+        name = "Sitemap"
+        weight = 3
+    [[params.footer.bottom]]
+        url = "#"
+        name = "Disclaimer"
+        weight = 4
+
+ [[params.social]]
+    url   = "#"
+    icon  = "fa fa-slack" 
+    name = "slack"
+ [[params.social]]
+    url   = "#"
+    icon  = "fa fa-rss" 
+    name = "rss"
+ [[params.social]]
+    url   = "#"
+    icon  = "fa fa-twitter" 
+    name = "twitter"
+ [[params.social]]
+    url   = "#"
+    icon  = "fa fa-youtube-play" 
+    name = "youtube"
+
+
+[permalinks]
+    # posts = "blog/:year/:month/:title/"
+    posts = "blog/:title/"
+    pages = ":slug/"
+
+
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.asciidocExt]
+    backend = 'html5'
+    extensions = []
+    failureLevel = 'fatal'
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = 'unsafe'
+    sectionNumbers = false
+    trace = false
+    verbose = false
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+
+
+  [markup.blackFriday]
+    angledQuotes = false
+    footnoteAnchorPrefix = ''
+    footnoteReturnLinkContents = ''
+    fractions = true
+    hrefTargetBlank = false
+    latexDashes = true
+    nofollowLinks = false
+    noreferrerLinks = false
+    plainIDAnchors = true
+    skipHTML = false
+    smartDashes = true
+    smartypants = true
+    smartypantsQuotesNBSP = false
+    taskLists = true
+
+
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = '2 3'
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'api' 
+    tabWidth = 20
+    # style= 'monika api fruity monokai native paraiso-dark rrt solarized-dark solarized-dark256 swapoff vim'
+
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = true
+    startLevel = 2
+  
+  [markup.goldmark.renderer]
+    unsafe= true
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+
+  [[related.indices]]
+    name = "title"
+    weight = 30
+
+  [[related.indices]]
+    name = "description"
+    weight = 30
+
+  [[related.indices]]
+    name = "tags"
+    weight = 30
+
+  [[related.indices]]
+    name = "date"
+    weight = 10

@@ -1,0 +1,17 @@
+{{if .Params.contributor }}
+<section class="section pt-1 contributor">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>{{.Params.contributor.heading}}</h4>
+                <p>{{.Params.contributor.text | safeHTML}}</p>
+                <ul class="name-list row mt-4">
+                    {{range .Params.contributor.name}}
+                        <li class="col-md-4 offset-md-2">{{.}}</li>
+                    {{end}}
+                </ul>
+            </div>
+        </div>  
+    </div>
+</section>
+{{end}}

@@ -1,0 +1,57 @@
+<section class="section old-ver">
+    <div class="container">
+        <div class="row">
+            <div class="col"><h4>Older Versions</h4></div>
+        </div>
+        <div class="row">  
+    {{ range (where .Site.Pages "Section" "documentation") }}
+        {{ range .Sections }}
+            <div class="col-md-4">
+                <div class="ver-table">
+                    <div class="table-head">
+                        {{ .Title }}
+                    </div>
+
+                    {{- $pages := .Pages }}
+                    {{- if .Sections}}
+                        {{- $pages = (.Pages | union .Sections) }}
+                    {{- end}}
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Version</th>
+                                <th>Release Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+
+                            {{- range   ($pages.ByPublishDate).Reverse }}  
+                            
+                               <tr>
+                                    <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+                                    <td> {{ .PublishDate.Format "Jan 2, 2006" }}   </td>
+                                </tr>
+                            {{end}}
+        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        {{end}}
+
+
+    {{ end }}
+
+            
+
+           
+
+
+
+
+
+        </div>
+    </div>
+</section>

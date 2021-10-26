@@ -1,0 +1,51 @@
+{{ define "main" }}    
+    {{- partial "header.html" . -}}  
+    <section class="overview">
+        <div class="container">
+            <div class="row top-overview py-100">
+                <div class="col-12 text-center">
+                    <h5>{{.Params.hero.desc | safeHTML}} </h5>
+                    <h2 class="mb-5">{{.Params.hero.heading | safeHTML }}</h2>
+                    <img src="{{.Params.hero.image}}" alt="{{.Params.hero.heading}}" class="img-fluid">
+                    <h6>{{.Params.hero.text | safeHTML}}</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="preferred text-center">
+                        <h3 class="mb-5">{{.Params.preferred.heading | safeHTML }}</h3>
+                        <img src="{{.Params.preferred.image}}" alt="preferred" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>            
+            <div class="row row-eq-height lists py-100">
+                {{range .Params.lists}}
+                    <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="boxes">
+                            <div class="icon"><img src="{{.icon}}" alt="{{.heading | safeHTML }}" class="img-fluid"></div>
+                            <p class="heading">{{.heading | safeHTML }}</p>
+                            <p>{{.text |safeHTML }}</p>                            
+                        </div>
+
+                    </div>
+                {{end}}
+            </div>
+
+            <div class="row history">
+                <div class="col-md-6 col-lg-4 d-md-flex">
+                    <img src="{{.Params.history.image}}" alt="{{.Params.history.heading}}" class="img-fluid">
+                </div>
+                <div class="col-md-6 col-lg-8">
+                    <h4>
+                        {{.Params.history.heading}}
+                    </h4>
+                    <div class="info">
+                        {{.Params.history.text | safeHTML}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+{{ end }}

@@ -1,0 +1,31 @@
+{{ if .Params.performance.enabled }}
+{{$data := .Params.performance }}
+
+<section class="section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">                                   
+                <div class="section-heading text-center">
+                    <h4>{{$data.heading}}</h4>
+                    {{with  $data.subHeading }}
+                     <h5>{{.}}</h5> 
+                    {{end}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{range $data.lists }}  
+                <div class="col-md-4 col-sm-6 performance-list"> 
+                    <div class="icon">
+                        <img src="{{.icon}}" alt="{{.heading}}}">
+                    </div>
+                    <div class="heading">{{.heading}}</div>
+                    <p>{{.description}}</p>
+
+                </div>
+            {{end}}
+        </div>
+    </div>
+</section>
+
+{{end}}
