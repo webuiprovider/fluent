@@ -1,7 +1,7 @@
 {{ if .Params.testimonials.enabled }}
 {{$data := .Params.testimonials }}
 
-<section class="testimonials-outter">
+<section class="testimonials-outter" style="{{ if ne .Params.highPerformance.enabled "true" }} margin-top:0px {{end}}">
 
 <section class="section testimonials mt-5">
     <div class="container">

@@ -15,76 +15,14 @@ copyright = "© 2021 Fluent Bit. All rights reserved"
         name = "Overview"
         weight = 1
     [[menu.main]]
-        identifier = "documentation"
+        identifier = "release notes"
         url = "/documentation/"
-        name = "Documentation"
+        name = "RELEASE NOTES"
         weight = 2
-
-        [[menu.main]]
-            parent = "documentation"
-            name = "v0.10"
-            url = "/documentation/v0.10/"
-            weight = 10
-        [[menu.main]]
-            parent = "documentation"
-            name = "v0.11"
-            url = "/documentation/v0.11/"
-            weight = 10
-        [[menu.main]]
-            parent = "documentation"
-            name = "v0.12"
-            url = "/documentation/v0.12/"
-            weight = 10
-        [[menu.main]]
-            parent = "documentation"
-            name = "v0.13"
-            url = "/documentation/v0.13/"
-            weight = 10
-        [[menu.main]]
-            parent = "documentation"
-            name = "v0.14"
-            url = "/documentation/v0.14/"
-            weight = 10
-        [[menu.main]]
-            parent = "documentation"
-            name = "v1.0"
-            url = "/documentation/v1.0/"
-            weight = 10
-        [[menu.main]]
-            parent = "documentation"
-            name = "v1.1"
-            url = "/documentation/v1.1/"
-            weight = 10
-        [[menu.main]]
-            parent = "documentation"
-            name = "v1.2"
-            url = "/documentation/v1.2/"
-            weight = 10
-        [[menu.main]]
-            parent = "documentation"
-            name = "v1.3"
-            url = "/documentation/v1.3/"
-            weight = 10
-        [[menu.main]]
-            parent = "documentation"
-            name = "v1.4"
-            url = "/documentation/v1.4/"
-            weight = 10            
-        [[menu.main]]
-            parent = "documentation"
-            name = "v1.5"
-            url = "/documentation/v1.5/"
-            weight = 10
-        [[menu.main]]
-            parent = "documentation"
-            name = "v1.6"
-            url = "/documentation/v1.6/"
-            weight = 10
-
     [[menu.main]]
-        identifier = "About"
-        url = "/about/"
-        name = "About"
+        identifier = "documentation"
+        url = "https://docs.fluentbit.io/manual"
+        name = "DOCUMENTATION"
         weight = 3
 
     [[menu.main]]

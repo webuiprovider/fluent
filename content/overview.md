@@ -8,7 +8,7 @@ hero:
  image: "/images/overview.svg"
  text: "An open source Log Processor and Forwarder which allows you to collect any data like metrics and logs from different sources, enrich them with filters and send them to multiple destinations."
 preferred:
- heading: "The preferred choice <br>  for containerized environments"
+ heading: "An example of sending data to Kafka and Splunk"
  image: "/images/preffered.svg"
 lists:
 - icon: "/images/event-driven.svg"
@@ -32,8 +32,8 @@ lists:
 history:
   heading: "A Brief History of Fluent Bit"
   image: "/images/history.svg"
-  text: "On 2014, the Fluentd team at Treasure Data forecasted the need of a lightweight log processor for constraint environments like Embedded Linux and Gateways, the project aimed to be part of the Fluentd Ecosystem and we called it Fluent Bit, fully open source and available under the terms of the Apache License v2.0.   <br>  <br> 
-  After the project was around for some time, it got some traction in the Embedded market but we also started getting requests for several features from the Cloud community like more inputs, filters, and outputs. Not so long after that, Fluent Bit becomes one of the preferred solutions to solve the logging challenges in Cloud environments"
+  text: "In 2014, the Fluentd team at Treasure Data saw the need of a lightweight log processor for environments like embedded Linux. The team created Fluent Bit, a fully open source and available under the terms of the Apache License v2.0.  <br>  <br> 
+  Since then Fluent Bit has also found a home in container based environments and is used by major cloud providers to solve tough data routing challenges."
 ---
 
 ## Overview

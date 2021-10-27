@@ -8,7 +8,7 @@ hero:
   subHeading: less overload, go deeper,
   btnText: DOWNLOAD NOW
   btnUrl: "#"
-  version: v1.8.2 released on Jul 20, 2021
+  version: V1.8.8 released on Octl 10, 2021
   noteText: Read the notes
   noteUrl: #
 howitworks: 
@@ -24,7 +24,7 @@ howitworks:
   - Multiple destinations
 brand: 
   enabled: true 
-  heading: Trusted and inspired by unique brands
+  heading: Trusted by unique brands
   subHeading: 
 performance: 
   enabled: true
@@ -43,7 +43,7 @@ performance:
 ctaBoxed: Fluent Bit is a CNCF (Cloud Native Computing Foundation) subproject under the umbrella of Fluentd.
       We are part of a wide community, no vendor lock-in.
 highPerformance:
-  enabled: true
+  enabled: false
   heading: High Performance at Low Cost
   subHeading: High throughput with low CPU and Memory usage. It's written in C language and has a pluggable architecture supporting more than 70 extensions for inputs, filters and outputs.
   lists:
@@ -78,11 +78,11 @@ highPerformance:
     image: /images/neutrality.svg
     imagePosition:
 testimonials:
-  enabled: true
+  enabled: false
   heading: Our Reviews
   subHeading: 
 features:
-  enabled: true
+  enabled: false
   heading: Relevant & Dynamic
   subHeading:  Our features offer a new ecosystem to your flow, with improvements of    <br> greater permanence in high performance.
   lists:
