@@ -82,34 +82,34 @@ testimonials:
   heading: Our Reviews
   subHeading: 
 features:
-  enabled: false
+  enabled: true
   heading: Relevant & Dynamic
   subHeading:  Our features offer a new ecosystem to your flow, with improvements of    <br> greater permanence in high performance.
   lists:
   - heading: Event Driven
     link: "#"
-    linkText: "Explore"
-    description: Fluent Bit as a service is fully event-driven, it only use asynchronous operations to collect and deliver data
+    linkText: ""
+    description: Fluent Bit is fully event-driven, Using asynchronous operations to collect and deliver data at high speed and performance.
   - heading: Flexible Routing
     link: "#"
-    linkText: "Explore"
-    description: The data that comes in the pipeline, can be routed to multiple places using custom routing rules. Ship your data to multiple places with zero-copy strategy.
+    linkText: ""
+    description: Ship your data to multiple end destinations, with advanced options based on content and data types.
   - heading: Configuration
     link: "#"
-    linkText: "Explore"
-    description: It configuration is very simple and human-readable, it allow to specify how it will behave, which features to enable and how Routing is performed.
-  - heading: I/O Handler
+    linkText: ""
+    description: Simple configuration for all plugins that let’s you get started in a couple of minutes.
+  - heading: Reliability and Buffering
     link: "#"
-    linkText: "Explore"
-    description: The Input/Output layer provides an abstraction that allow to perform read/write operations in an asynchronous way.
-  - heading: Upstream Manager
+    linkText: ""
+    description: Built-in I/O handlers to store data in case of end destination disruptions, and buffered output.
+  - heading: High availability
     link: "#"
-    linkText: "Explore"
-    description: Our Upstream manager simplify the connection process and take care of timeout/network exceptions and Keepalive states.
+    linkText: ""
+    description: Simplified Upstream configuration that automatically takes care of high availability with timeout and keep alive management
   - heading: Security & TLS
     link: "#"
-    linkText: "Explore"
-    description: When delivering data to destinations, output connectors inherit full TLS capabilities in an abstracted way. Add your certificates as required.
+    linkText: ""
+    description: Full TLS capabilities for plugins, as well as advanced certificate and Kerberos features depending on plugin.
 cta:
   enabled: true
   image: "/images/cta.png"

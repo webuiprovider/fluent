@@ -12,7 +12,7 @@
             </div>
 
 
-            <div class="col-md-6 col-lg-7 animation-area">
+            <div class="col-md-6 col-lg-7 animation-area" data-aos="fade-right" data-aos-duration="2000">
                 <img src="{{$data.image }}" alt="how it works" class="img-fluid">
 
                 <div class="ani-text">
@@ -21,8 +21,8 @@
 
 
                         <span class="var-highlight">$ curl -X GET http://192.168.2.3:9200/</span>  {
-                            "name" : <span class="string-highlight"> "Janus"</span>,
-                            "cluster_name" : <span class="string-highlight">"elasticsearch"</span>,
+                            "name" : <span class="string-highlight"> "tail"</span>,
+                            "Tag" : <span class="string-highlight">"elasticsearch"</span>,
                             <span class="var-highlight">"version" :</span>  {   
                             "number" : <span class="string-highlight">"2.3.3"</span>,
                             "build_hash" :<span class="string-highlight">"218bdf10790eef486ff2c41a3df5cfa32dadcfde"</span>,
@@ -46,7 +46,7 @@
                     </pre>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-5">
+            <div class="col-md-6 col-lg-5" data-aos="fade-left" data-aos-duration="2000">
                 <h4>{{$data.info | safeHTML}}</h4>
                 <ul class="mb-4">
                     {{range $data.lists}}

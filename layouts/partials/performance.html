@@ -6,9 +6,9 @@
         <div class="row mb-5">
             <div class="col-12">                                   
                 <div class="section-heading text-center">
-                    <h4>{{$data.heading}}</h4>
+                    <h4 data-aos="zoom-in">{{$data.heading}}</h4>
                     {{with  $data.subHeading }}
-                     <h5>{{.}}</h5> 
+                     <h5 data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1000">{{.}}</h5> 
                     {{end}}
                 </div>
             </div>
@@ -16,11 +16,11 @@
         <div class="row">
             {{range $data.lists }}  
                 <div class="col-md-4 col-sm-6 performance-list"> 
-                    <div class="icon">
+                    <div class="icon" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="300">
                         <img src="{{.icon}}" alt="{{.heading}}}">
                     </div>
-                    <div class="heading">{{.heading}}</div>
-                    <p>{{.description}}</p>
+                    <div class="heading" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="300">{{.heading}}</div>
+                    <p data-aos="zoom-out-down" data-aos-easing="linear" data-aos-duration="300">{{.description}}</p>
 
                 </div>
             {{end}}

@@ -88,4 +88,30 @@
 <script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 
 
+<script src="/aos/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-out-back',
+            duration: 1000
+  });
+</script>
+
+
+
+<!-- Swiper JS -->
+<script src="/js/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 2,
+  spaceBetween: 0,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+</script>
+
+
 

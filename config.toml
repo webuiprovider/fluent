@@ -24,6 +24,7 @@ copyright = "© 2021 Fluent Bit. All rights reserved"
         url = "https://docs.fluentbit.io/manual"
         name = "DOCUMENTATION"
         weight = 3
+        tab = "extranal"
 
     [[menu.main]]
         identifier = "blog"

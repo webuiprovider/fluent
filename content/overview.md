@@ -13,22 +13,22 @@ preferred:
 lists:
 - icon: "/images/event-driven.svg"
   heading: Event Driven
-  text: "Fluent Bit as a service is fully event-driven, it only use asynchronous operations to collect and deliver data."
+  text: "Fluent Bit is fully event-driven, Using asynchronous operations to collect and deliver data at high speed and performance."
 - icon: "/images/flexible-routing.svg"
   heading: Flexible Routing
-  text: "The data that comes in the pipeline, can be routed to multiple places using custom routing rules. Ship your data to multiple places with zero-copy strategy."
+  text: "Ship your data to multiple end destinations, with advanced options based on content and data types."
 - icon: "/images/configuration.svg"
   heading: Configuration
-  text: "It configuration is very simple and human-readable, it allow to specify how it will behave, which features to enable and how Routing is performed."
+  text: "Simple configuration for all plugins that let’s you get started in a couple of minutes."
 - icon: "/images/io-handler.svg"
-  heading: I/O Handler
-  text: "The Input/Output layer provides an abstraction that allow to perform read/write operations in an asynchronous way."
+  heading: Reliability and Buffering
+  text: "Built-in I/O handlers to store data in case of end destination disruptions, and buffered output."
 - icon: "/images/upstream-manager.svg"
-  heading: Upstream Manager
-  text: "Our Upstream manager simplify the connection process and take care of timeout/network exceptions and Keepalive states."
+  heading: High availability
+  text: "Simplified Upstream configuration that automatically takes care of high availability with timeout and keep alive management."
 - icon: "/images/security.svg"
   heading: Security & TLS
-  text: "When delivering data to destinations, output connectors inherit full TLS capabilities in an abstracted way. Add your certificates as required."
+  text: "Full TLS capabilities for plugins, as well as advanced certificate and Kerberos features depending on plugin."
 history:
   heading: "A Brief History of Fluent Bit"
   image: "/images/history.svg"
