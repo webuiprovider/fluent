@@ -17,32 +17,28 @@
 
                 <div class="ani-text">
                     <pre id="typewriter">
+                        <span class="var-highlight">[INPUT]</span>
+                            Name <span class="string-highlight"> tail</span>
+                            Tag  <span class="string-highlight">tail.01</span>
+                            Path <span class="string-highlight">/var/log/system.log</span>
 
+                        <span class="var-highlight">[OUTPUT]</span>                            
+                            Name <span class="string-highlight">s3</span>
+                            Match <span class="string-highlight">*</span>
+                            bucket <span class="string-highlight">your-bucket</span>
+                            region <span class="string-highlight">us-east-1</span>
+                            store_dir <span class="string-highlight">/home/ec2-user/buffer</span>
+                            total_file_size <span class="string-highlight">50M</span>
+                            upload_timeout <span class="string-highlight">10m</span>
 
-
-                        <span class="var-highlight">$ curl -X GET http://192.168.2.3:9200/</span>  {
-                            "name" : <span class="string-highlight"> "tail"</span>,
-                            "Tag" : <span class="string-highlight">"elasticsearch"</span>,
-                            <span class="var-highlight">"version" :</span>  {   
-                            "number" : <span class="string-highlight">"2.3.3"</span>,
-                            "build_hash" :<span class="string-highlight">"218bdf10790eef486ff2c41a3df5cfa32dadcfde"</span>,
-                            "build_timestamp" :           <span class="string-highlight">"2016-05-17T15:40:04Z"</span>,
-                            "build_snapshot" :            <span class="string-highlight">false</span>,
-                                "lucene_version" :            <span class="string-highlight">"5.5.0"</span>
-                            },
-
-                            "tagline" :            <span class="string-highlight">"You Know, for Search"</span>,
-
-
-                        }
-<!-- 
-                        <span class="var-highlight">$ curl -X GET 'http://192.168.2.3:9200/fluentbit/_search'</span>
-                    {<span class="string-highlight">"took":1,"timed_out":false,"_shards":{"total":5}</span>} -->
-                        
-
-
-
-
+                        <span class="var-highlight">[OUTPUT]</span>
+                            Name <span class="string-highlight">splunk</span>
+                            Match <span class="string-highlight">*</span>
+                            Host <span class="string-highlight">127.0.0.1</span>
+                            Port <span class="string-highlight">8088</span>
+                            TLS <span class="string-highlight">On</span>
+                            TLS.Verify  <span class="string-highlight">Off</span>
+                            Message_Key  <span class="string-highlight">my_key</span>
                     </pre>
                 </div>
             </div>
