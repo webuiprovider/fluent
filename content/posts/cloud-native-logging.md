@@ -2,7 +2,7 @@
 title: 'Cloud Native Logging'
 date: 2021-01-25T09:38:03+10:00
 description: "The original draft post about Fluent Bit while back in 2017."
-image: "https://placeimg.com/640/480/arch/grayscale"
+image: "/images/Cloud Native Logging.jpg"
 ---
 
 #### Diatool now supports “Fluent Bit”! Tool was just released as v.1.0, and now you can automate your troubleshooting process for both Fluentd and Fluent Bit

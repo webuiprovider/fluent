@@ -2,7 +2,7 @@
 title: '3 Common Architecture Patterns with Fluentd and Fluent Bit'
 date: 2021-01-25
 description: "Learn common ways to deploy Fluent Bit and Fluentd. Including forwarder-aggregator, side-car/agent, and network device aggregator pattern."
-image: "https://placeimg.com/640/480/nature/sepia"
+image: "/images/3 Common Architecture Patterns with Fluentd and Fluent Bit.jpg"
 ---
 
 #### Diatool now supports “Fluent Bit”! Tool was just released as v.1.0, and now you can automate your troubleshooting process for both Fluentd and Fluent Bit

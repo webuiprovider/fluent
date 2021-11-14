@@ -2,6 +2,7 @@
 title: 'A better <br> knowledge base'
 description: 'We provides the means for the collection, organization and computerized retrieval of knowledge'
 url: 'documentation'
+heroBg: "/images/hero.jpg"
 latestVer:
   heading: "Fluent Bit v1.8.8 is out!"
   subHeading: "New release on Oct 10, 2021,"

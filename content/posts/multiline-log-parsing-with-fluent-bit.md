@@ -1,8 +1,9 @@
 ---
-title: 'Supercharge Your Logging Pipeline with Fluent Bit Stream Processing'
+title: 'Multiline log parsing with Fluent Bit'
 date: 2021-01-25
-description: "Learn how to use Fluent Bit Stream Processing to reduce log volume, pre-process your data, and use time-series predictions."
-image: "https://placeimg.com/640/480/animal/sepia"
+description: "Learn about how to handle multiline logging with Fluent Bit with suggestions and an example of multiline parser.
+"
+image: "/images/Multiline log parsing with Fluent Bit.jpg"
 ---
 
 #### Diatool now supports “Fluent Bit”! Tool was just released as v.1.0, and now you can automate your troubleshooting process for both Fluentd and Fluent Bit

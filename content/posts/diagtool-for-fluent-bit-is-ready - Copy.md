@@ -2,7 +2,7 @@
 title: 'Diagtool for  Fluent Bit is ready 22'
 date: 2021-01-25
 description: "Diatool now supports 'Fluent Bit'! Tool was just released as v.1.0, and now you can automate your troubleshooting process for both Fluentd and Fluent Bit."
-image: "https://placeimg.com/640/480/people/sepia"
+image: "/images/Diagtool for Fluent Bit is ready 22.jpg"
 ---
 
 ##### Fluentd vs Fluent Bit
