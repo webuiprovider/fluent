@@ -1,6 +1,6 @@
 ---
 title: 'Supercharge Your Logging Pipeline with Fluent Bit Stream Processing'
-date: 2021-01-25
+date: 2021-01-22
 description: "Learn how to use Fluent Bit Stream Processing to reduce log volume, pre-process your data, and use time-series predictions."
 image: "/images/Supercharge Your Logging Pipeline with Fluent Bit Stream Processing.jpg"
 ---
