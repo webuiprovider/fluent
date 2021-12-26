@@ -1,7 +1,7 @@
 ---
 title: 'Diagtool for  Fluent Bit is ready'
-date: 2021-01-17T09:38:03+10:00
-description: "Diatool now supports 'Fluent Bit'! Tool was just released as v.1.0, and now you can automate your troubleshooting process for both Fluentd and Fluent Bit."
+date: "2021-01-17"
+description: "<p>Diatool now supports <a href='https://www.fluentbit.io/'>Fluent Bit</a>! Tool was just released as v.1.0, and now you can automate your troubleshooting process for both Fluentd and Fluent Bit.</p>"
 image: "/images/Diagtool for Fluent Bit is ready.jpg"
 ---
 

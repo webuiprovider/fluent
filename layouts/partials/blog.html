@@ -3,30 +3,34 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 py-100">
-                    <div class="card-columns">
+                    <div class="card-columns row">
                         {{ $dateFormat := default "Jan 2, 2006" (index .Site.Params "date_format") }}
 
-                    {{ range .Data.Pages }}
-                        {{ "<!-- blog-item -->" | safeHTML }}
-                            <article class="card">
-                                <div class="d-flex">
-                                    <p class="mb-0 date">{{ .Date.Format $dateFormat }}</p>
-                                </div>
-                                <div class="card-img-wrapper overlay-rounded-top">
-                                    <img class="card-img-top" src="{{ .Params.image | absURL }}" alt="blog-thumbnail">
-                                </div>
-                                <div class="card-body p-0">
-                                    <div class="d-flex">                                        
-                                        <div class="">
-                                            <h6>
-                                                {{ .Title | safeHTML }}
-                                            </h6>                                            
-                                            <p>{{ .Params.description }}</p>
-                                            <a href="{{ .Permalink }}" class="read-link ">Read more <i class="fa fa-long-arrow-right"></i></a>
-                                        </div>
+                      {{ range (where .Data.Pages "Section" "posts").ByDate.Reverse }}
+                       <div class="col-md-4 col-sm-6">
+                        <article class="card">
+                            <div class="d-flex">
+                                <p class="mb-0 date">{{ .Date.Format $dateFormat }}
+                                    
+                                </p>
+                            </div>
+                            <div class="card-img-wrapper overlay-rounded-top">
+                                <img class="card-img-top" src="{{ .Params.image | absURL }}" alt="blog-thumbnail">
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="d-flex">                                        
+                                    <div class="">
+                                        <h6>
+                                            {{ .Title | safeHTML }}
+                                        </h6>                                            
+                                        <p>{{ .Params.description | safeHTML }}</p>
+                                        <a href="{{ .Permalink }}" class="read-link ">Read more <i class="fa fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
-                            </article>
+                            </div>
+                        </article>
+
+                       </div>
                     {{ end }}
                 
                 </div>
