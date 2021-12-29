@@ -116,11 +116,12 @@ copyright = "© 2021 Fluent Bit. All rights reserved"
     nofollowLinks = false
     noreferrerLinks = false
     plainIDAnchors = true
-    skipHTML = false
+    skipHTML = true
     smartDashes = true
     smartypants = true
     smartypantsQuotesNBSP = false
     taskLists = true
+    extensions = ["hardLineBreak"]
 
 
   [markup.highlight]

@@ -1,7 +1,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>{{ .Title | safeHTML }}</title>
+	<title>{{ with .Title }}{{ . | safeHTML | safeHTMLAttr  }}{{ end }}</title>
 
 	{{ "<!-- mobile responsive meta -->" | safeHTML }}
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -41,6 +41,14 @@
 	{{ "<!--Favicon-->" | safeHTML }}
 	<link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
 	<link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ `images/apple-touch-icon.png` | absURL }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ `images//favicon-32x32.png` | absURL }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ `images/favicon-16x16.png` | absURL }}">
+	<link rel="manifest" href="{{ `images/site.webmanifest` | absURL }}">
+	<link rel="mask-icon" href="{{ `images/safari-pinned-tab.svg` | absURL }}" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
 	{{ if .Site.Params.google_analytics_id }}
 		{{ partial "google-analytics.html" . }}

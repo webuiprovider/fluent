@@ -1,5 +1,8 @@
 ---
-title: 'A better <br> knowledge base'
+title: 'A better knowledge base'
+# title: |
+#   hello
+#   there
 description: 'We provides the means for the collection, organization and computerized retrieval of knowledge'
 url: 'documentation'
 heroBg: "/images/hero.jpg"
