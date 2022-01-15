@@ -19,9 +19,24 @@
 - logo: "/images/brands/sumo-logic.svg"
   name: "sumo logic"
   weight: 7
+- logo: "/images/brands/trend.svg"
+  name: "trend"
+  weight: 8
+- logo: "/images/brands/datadog.svg"
+  name: "datadog"
+  weight: 9
+- logo: "/images/brands/logdna.svg"
+  name: "logdna"
+  weight: 10
+- logo: "/images/brands/lyft.svg"
+  name: "lyft"
+  weight: 19
+- logo: "/images/brands/couchbase.svg"
+  name: "couchbase"
+  weight: 21
 - logo: "/images/brands/linkedin.svg"
   name: "linkedin"
-  weight: 8
+  weight: 26
 - logo: "/images/brands/vmware.svg"
   name: "vmware"
   weight: 9
@@ -40,24 +55,3 @@
 - logo: "/images/brands/crowdstrike.svg"
   name: "crowdstrike"
   weight: 14
-- logo: "/images/brands/trend.svg"
-  name: "trend"
-  weight: 15
-- logo: "/images/brands/datadog.svg"
-  name: "datadog"
-  weight: 16
-- logo: "/images/brands/logdna.svg"
-  name: "logdna"
-  weight: 17
-- logo: "/images/brands/treasure-data.svg"
-  name: "treasure-data"
-  weight: 18
-- logo: "/images/brands/lyft.svg"
-  name: "lyft"
-  weight: 19
-- logo: "/images/brands/another.svg"
-  name: "another"
-  weight: 20
-- logo: "/images/brands/couchbase.svg"
-  name: "couchbase"
-  weight: 21

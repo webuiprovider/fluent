@@ -1,6 +1,6 @@
 {{ if .Params.howitworks.enabled }}
 {{$data := .Params.howitworks }}
-<section class="how-it-works">
+<section class="how-it-works" style="order: {{$data.position}};">
     <div class="container">
         <div class="row">
 
@@ -33,23 +33,17 @@
 
                         <span class="var-highlight">[OUTPUT]</span>
                             Name <span class="string-highlight">splunk</span>
-                            Match <span class="string-highlight">*</span>
-                            Host <span class="string-highlight">127.0.0.1</span>
-                            Port <span class="string-highlight">8088</span>
-                            TLS <span class="string-highlight">On</span>
-                            TLS.Verify  <span class="string-highlight">Off</span>
-                            Message_Key  <span class="string-highlight">my_key</span>
                     </pre>
                 </div>
             </div>
             <div class="col-md-6 col-lg-5" data-aos="fade-left" data-aos-duration="2000">
-                <h4>{{$data.info | safeHTML}}</h4>
+                <h4 class="text-gradient text-left mt-4">{{$data.info | safeHTML}}</h4>
                 <ul class="mb-4">
                     {{range $data.lists}}
                     <li>{{.}}</li>
                     {{end}}
                 </ul>
-                <p><a href="{{$data.btnUrl | safeHTML}}" class="btn btn-border">{{$data.btnText | safeHTML}}</a></p>
+                <p><a href="{{$data.btnUrl | safeHTML}}" class="btn btn-gradient text-uppercase">{{$data.btnText | safeHTML}}</a></p>
             </div>
         </div>
     </div>

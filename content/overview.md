@@ -9,7 +9,7 @@ hero:
  text: "An open source Log Processor and Forwarder which allows you to collect any data like metrics and logs from different sources, enrich them with filters and send them to multiple destinations."
 preferred:
  heading: "An example of sending data to Kafka and Splunk"
- image: "/images/preffered.svg"
+ image: "/images/sending-data.svg"
 lists:
 - icon: "/images/event-driven.svg"
   heading: Event Driven
@@ -20,13 +20,13 @@ lists:
 - icon: "/images/configuration.svg"
   heading: Configuration
   text: "Simple configuration for all plugins that let’s you get started in a couple of minutes."
-- icon: "/images/io-handler.svg"
+- icon: "/images/o-handler.svg"
   heading: Reliability and Buffering
   text: "Built-in I/O handlers to store data in case of end destination disruptions, and buffered output."
 - icon: "/images/upstream-manager.svg"
   heading: High availability
   text: "Simplified Upstream configuration that automatically takes care of high availability with timeout and keep alive management."
-- icon: "/images/security.svg"
+- icon: "/images/security-TLS.svg"
   heading: Security & TLS
   text: "Full TLS capabilities for plugins, as well as advanced certificate and Kerberos features depending on plugin."
 history:

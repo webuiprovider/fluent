@@ -1,9 +1,9 @@
 {{ if .Params.brand.enabled }}
 {{$data := .Params.brand }}
 
-<section class="section">
+<section class="section" style="order: {{$data.position}};">
     <div class="container">
-        <div class="row mb-3 mb-md-5">
+        <div class="row mb-1">
             <div class="col-12">                                   
                 <div class="section-heading text-center">
                     <h4 data-aos="zoom-in">{{$data.heading}}</h4>
@@ -15,9 +15,11 @@
         </div>
         <div class="row">
             <div class="col-12"> 
+                {{$brand := .Site.Data.brand}} 
                 <ul class="brand-list" data-aos="zoom-in">
-                    {{range .Site.Data.brand }}  
-                        <li><img src="{{.logo}}" alt="{{.name}}"></li>
+                    
+                    {{ range $brand  }}
+                        <li><img src="{{.logo}}" alt="{{.name}}"> {{.Weight}}</li>
                     {{end}}
                 </ul>
             </div>

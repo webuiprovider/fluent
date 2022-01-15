@@ -1,11 +1,18 @@
-{{ if .Params.ctaBoxed }}
-
-<section class="section cta-boxed ">
+{{ if .Params.ctaBoxed.enabled }}
+{{$data := .Params.ctaBoxed }}
+<section class="section cta-boxed " style="order: {{$data.position}};">
     <div class="container">
         <div class="row mb-5">
             <div class="col-12 ">                                   
-                <div class="testi-info text-center" data-aos="zoom-out-up">                   
-                     <p>{{.Params.ctaBoxed }}</p> 
+                <div class="testi-info text-center" data-aos="zoom-out-up">   
+                    <img src="{{$data.image }}"  alt="">
+                    <div class="my-3 text-center">                
+                        <!-- Place this tag where you want the button to render. -->
+                        <a class="github-button" href="https://github.com/{{$data.gitUser }}/{{$data.gitRepo }}" data-size="large" data-show-count="true" aria-label="Star webuiprovider/fluent on GitHub">Star</a>        
+                        <!-- <iframe src="https://ghbtns.com/github-btn.html?user=webuimaker&repo=fluint&type=star&count=true&size=small" frameborder="0" scrolling="0" width="" height="30" title="GitHub"></iframe> -->
+                    </div>                    
+                     <p>{{$data.text }}</p> 
+                     <p class="test-highlight text-gradient">{{$data.highlightText }}</p> 
                 </div>
             </div>
         </div>

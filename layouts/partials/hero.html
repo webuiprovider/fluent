@@ -1,18 +1,27 @@
 {{ if .Params.hero.enabled }}
 {{$data := .Params.hero }}
-<section class="hero" >
+<section class="hero" style="order: {{$data.position}};" >
 <div class="container">
     <div class="row">
         <div class="col-12 text-center">
-            <p data-aos="zoom-out" data-aos-delay="100">{{$data.tag | safeHTML}}</p>
+            <p data-aos="zoom-out" class="text-gradient" data-aos-delay="100">{{$data.tag | safeHTML}}</p>
             <h1 data-aos="zoom-in" data-aos-delay="100">{{$data.heading | safeHTML}}</h1>
             <p class="sub-heading" data-aos="zoom-in-up">{{$data.subHeading | safeHTML}}</p>
-            <p><a href="{{$data.btnUrl | safeHTML}}" class="btn btn-primary" data-aos="zoom-in">{{$data.btnText | safeHTML}}</a></p>
-            <p class="ver" data-aos="flip-right">{{$data.version | safeHTML}}</p>   
-            <a href="{{$data.noteUrl | safeHTML}}" class="read-link" data-aos="fade-up">{{$data.noteText | safeHTML}}</a>
-
-
+            <div class="d-flex release-btn">
+                <p class="mr-3">
+                    <a href="{{$data.btnUrl | safeHTML}}" class="btn btn-gradient" data-aos="zoom-in">{{$data.btnText | safeHTML}}</a>
+                </p>                
+                <p class="ver" data-aos="flip-right">
+                    {{$data.version | safeHTML}} released on <strong>{{$data.releasedDate | safeHTML}}</strong> <br>
+                    <a href="{{$data.noteUrl | safeHTML}}" class="read-link" data-aos="fade-up">{{$data.noteText | safeHTML}}</a>
+                </p>
+            </div> 
         </div>
+        {{if $data.image}}
+            <div class="col-12 text-center hero-image">
+                <img src="{{$data.image | safeHTML}}" alt="{{$data.heading | safeHTML}}">
+            </div>
+        {{end}}
     </div>
 </div>
 </section>

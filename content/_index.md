@@ -3,47 +3,64 @@ title: 'fluentbit'
 description: ''
 hero:  
   enabled: true
-  heading: High Performance
-  tag: "The most downloaded log forwarder & stream processor <br> for Linux, BSD, and OSX."
-  subHeading: less overload, go deeper,
+  position: 1
+  heading: An End to End <br>  Observability Pipeline
+  tag: "Deployed Over One Billion Times"
+  subHeading: Fluent Bit is a super fast, lightweight, and highly scalable logging and metrics processor and <br>forwarder.  It is the preferred choice for cloud and containerized environments.
   btnText: DOWNLOAD NOW
   btnUrl: "#"
-  version: V1.8.8 released on Octl 10, 2021
-  noteText: Read the notes
+  version: V1.8.8 
+  releasedDate: Octl 10, 2021
+  noteText: Read the notes »
   noteUrl: #
+  image: "/images/hero.svg"
 howitworks: 
   enabled: true
-  image: /images/how.svg   
+  position: 5
+  image: /images/how-back.svg   
   btnText: Read how it works
-  btnUrl: "#"
-  info: Collect logs and metrics from different sources, enrich them with filters and send them to multiple destinations.  
+  btnUrl: "#performance"
+  info: Fluent Bit enables you to collect logs and metrics from multiple sources, enrich them with filters, and distribute them to any defined destination.
   lists: 
-  - 80+ built in connectors and plugins
-  - Built in buffering and reliability
-  - Flexible Routing
-  - Multiple destinations
+  - Optimized data parsing and routing
+  - Prometheus and OpenTelemetry compatible
+  - Stream processing functionality
+  - Built in buffering and error-handling capabilities
 brand: 
   enabled: true 
-  heading: Trusted by unique brands
+  position: 2
+  heading: Trusted by some of the world’s largest and most complex organizations
   subHeading: 
 performance: 
   enabled: true
+  position: 3
+  sectionId: "performance"
   heading: Designed with performance in mind
-  subHeading:  High throughput with low CPU and Memory usage. It's written in C language and has a pluggable architecture supporting more than 70 extensions for inputs, filters and outputs.
+  subHeading:  A robust, lightweight, and portable architecture for high throughput with low CPU and memory usage <br> from any data source to any destination.
   lists:
-  - heading: Lightweight
+  - heading: Scalable
     icon: /images/lightweight.svg
-    description: It has been designed as a lightweight solution with high performance in mind. From a design perspective, it's fully asynchronous (event-driven) and take the most of the operating systems API for performance and reliability.
-  - heading: Extensible
+    description: IProven across distributed cloud and container environments. Highly available with I/O handlers to store data for disaster recovery.
+    heightlightText: "> 1pb data throughput across thousands of sources and destinations daily"
+  - heading: Flexible
     icon: /images/extensible.svg
-    description: All inputs, filters and outputs features are implemented through the plugins interface. Extend the features with C, Lua (filters) or Golang (outputs).
-  - heading: Metrics
+    description: Granular management of data parsing and routing.  Filtering and enrichment to optimize security and minimize cost.
+    heightlightText: "> 1 Billion sources managed by Fluent Bit - from IoT Devices to Windows and Linux servers."
+  - heading: Efficient
     icon: /images/metrics.svg
-    description: Meassuring is important. Fluent Bit comes with native plugins to gather metrics from your CPU, Memory, Disk I/O and Network usage on Linux systems. In addition, it can receive metrics from external services like Statsd and Collectd.
-ctaBoxed: Fluent Bit is a CNCF (Cloud Native Computing Foundation) subproject under the umbrella of Fluentd.
-      We are part of a wide community, no vendor lock-in.
+    description: "Lightweight, asynchronous design optimizes resource usage: CPU, memory, disk I/O, network. No more OOM errors!"
+    heightlightText: "~ 450kb minimal footprint maximizes asset support. Zero external dependencies."
+ctaBoxed: 
+  enabled: true
+  position: 4
+  image: /images/cloun-native.svg
+  gitUser: "webuiprovider"
+  gitRepo: "fluent"
+  text: "Fluent Bit is a CNCF (Cloud Native Computing Foundation) graduated project under the umbrella of Fluentd."
+  highlightText: "We are part of a large open source community. No vendor lock-in."
 highPerformance:
   enabled: false
+  position: 5
   heading: High Performance at Low Cost
   subHeading: High throughput with low CPU and Memory usage. It's written in C language and has a pluggable architecture supporting more than 70 extensions for inputs, filters and outputs.
   lists:
@@ -79,39 +96,48 @@ highPerformance:
     imagePosition:
 testimonials:
   enabled: false
+  position: 5
   heading: Our Reviews
   subHeading: 
 features:
   enabled: true
-  heading: Relevant & Dynamic
-  subHeading:  Our features offer a new ecosystem to your flow, with improvements of    <br> greater permanence in high performance.
+  position: 5
+  heading: The Fluent Bit Advantage
+  subHeading:  Fluent Bit is purpose built for high scale data observability <br> in any dynamic, distributed environment
   lists:
-  - heading: Event Driven
+  - heading: Event-Driven Architecture
     link: "#"
     linkText: ""
-    description: Fluent Bit is fully event-driven, Using asynchronous operations to collect and deliver data at high speed and performance.
-  - heading: Flexible Routing
+    icon: "/images/event-driven-architecture.svg"
+    description: Fully event driven design, leverages the operating system API for performance and reliability.  All operations to collect and deliver data are asynchronous
+  - heading: Dynamic Routing
     link: "#"
     linkText: ""
-    description: Ship your data to multiple end destinations, with advanced options based on content and data types.
-  - heading: Configuration
+    icon: "/images/dynamic-routing.svg"
+    description: Optimized data parsing and routing to improve security and reduce overall cost. Distribute data to multiple destinations with a zero copy strategy
+  - heading: Flexible Configuration
     link: "#"
     linkText: ""
-    description: Simple configuration for all plugins that let’s you get started in a couple of minutes.
-  - heading: Reliability and Buffering
+    icon: "/images/flexible-configuration.svg"
+    description: Simple, granular controls enable detailed orchestration and management of data collection and transfer across your entire ecosystem
+  - heading: Robust I/O Handler
     link: "#"
     linkText: ""
-    description: Built-in I/O handlers to store data in case of end destination disruptions, and buffered output.
-  - heading: High availability
+    icon: "/images/robust-handler.svg"
+    description: An abstracted I/O layer supports high-scale read/write operations and enables optimized data routing and support for stream processing
+  - heading: Upstream Manager
     link: "#"
     linkText: ""
-    description: Simplified Upstream configuration that automatically takes care of high availability with timeout and keep alive management
+    icon: "/images/upstream-manager-sm.svg"
+    description: Removes challenges with handling TCP connections to upstream data sources. Simplifies connection process, manages timeout/network exceptions and Keepalived states
   - heading: Security & TLS
     link: "#"
     linkText: ""
-    description: Full TLS capabilities for plugins, as well as advanced certificate and Kerberos features depending on plugin.
+    icon: "/images/security-TLS-ms.svg"
+    description: When delivering data to destinations, output connectors inherit full TLS capabilities in an abstracted way. Add your certificates as required.
 cta:
   enabled: true
+  position: 6
   image: "/images/cta.png"
   heading: Stay Updated
   subHeading:  Leave your email and get connected with our lastest news, relases and more.

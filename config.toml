@@ -9,35 +9,51 @@ logo = "/images/logo.svg"
 logo2 = "/images/logo-white.svg"
 footer_logo = "/images/footer-logo.svg"
 copyright = "© 2021 Fluent Bit. All rights reserved"
+lastVersion = "V1.8.8"
+releasedOn = "Oct 10, 2021"
 	         	         
-    [[menu.main]]
-        url = "/overview/"
-        name = "Overview"
-        weight = 1
-    [[menu.main]]
-        identifier = "release notes"
-        url = "/documentation/"
-        name = "RELEASE NOTES"
-        weight = 2
+   
     [[menu.main]]
         identifier = "documentation"
         url = "https://docs.fluentbit.io/manual"
         name = "DOCUMENTATION"
-        weight = 3
-        tab = "extranal"
-
+        weight = 1
+        tab = "extranal" 
+    [[menu.main]]
+        identifier = "how it works"
+        url = "/how-it-works/"
+        name = "how it works"
+        weight = 2
+    [[menu.main]]
+        identifier = "release notes"
+        url = "/documentation/"
+        name = "RELEASE NOTES"
+        weight = 3    
+    [[menu.main]]
+        identifier = "Enterprise"
+        url = "/enterprise/"
+        name = "Enterprise"
+        weight = 4    
+    [[menu.main]]
+        identifier = "Community"
+        url = "/community/"
+        name = "Community"
+        weight = 5   
+    [[menu.main]]
+        url = "/overview/"
+        name = "Overview"
+        weight = 6
     [[menu.main]]
         identifier = "blog"
         url = "/blog/"
         name = "Blog"
-        weight = 4
-    
+        weight = 7   
 
     [[menu.main]]
         identifier = "slack"
         url = "/slack/"
         name = "slack"
-        weight = 5
+        weight = 8
         pre = "/images/slack.svg"
         slack = "/images/slack-w.svg"
 
@@ -66,7 +82,7 @@ copyright = "© 2021 Fluent Bit. All rights reserved"
         weight = 4
 
  [[params.social]]
-    url   = "#"
+    url   = "https://launchpass.com/fluent-all"
     icon  = "fa fa-slack" 
     name = "slack"
  [[params.social]]
@@ -74,13 +90,14 @@ copyright = "© 2021 Fluent Bit. All rights reserved"
     icon  = "fa fa-rss" 
     name = "rss"
  [[params.social]]
-    url   = "#"
+    url   = "https://twitter.com/fluentbit"
     icon  = "fa fa-twitter" 
     name = "twitter"
  [[params.social]]
     url   = "#"
     icon  = "fa fa-youtube-play" 
     name = "youtube"
+
 
 
 [permalinks]
