@@ -12,25 +12,11 @@
                 </div>
             </div>
         </div>
-        
-        <div class="row">
-            {{range $data.lists }}  
-                <div class="col-md-4 col-sm-6 features-list mb-4">  
-                    <div class="list-box" data-aos="flip-up">
-                        {{if .icon}}
-                            <div class="text-left mb-4">                                
-                                <img src="{{.icon}}" alt="{{.heading}}" class="icon">
-                            </div>
-                        {{end}}
-                        <div class="heading">{{.heading}}</div>
-                        <p>{{.description}}</p>
-                    {{with .linkText }}<p class="link"><a href="{{.link}}">{{.linkText}} 
-                        <i class="fa fa-long-arrow-right"></i></a></p>
-                        {{end}}
-                    </div>  
-                </div>
-            {{end}}
-        </div>
+        {{if eq $data.lists true }}        
+            {{- partial "advantage.html" . -}}
+        {{end}}
+
+    
     </div>
 </section>
 {{end}}

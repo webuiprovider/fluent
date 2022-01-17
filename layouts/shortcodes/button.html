@@ -1,0 +1,21 @@
+{{ $href := .Get "href"}}
+{{ $position := .Get "position"  }}
+{{ $class := .Get "class" | default "btn-gradient"   }}
+{{ $target := .Get "target" }}
+{{ $block := .Get "block" | default "block" }}
+{{ $textTransform := .Get "text-transform" | default "uppercase" }}
+{{ $margin := .Get "margin"  }}
+
+
+{{if eq $block  "inline"}}
+<a href="{{$href}}" class="{{$class}}" target="{{$target}}">{{- .Inner | markdownify -}}</a>
+
+{{else}}
+
+<div class="row">
+    <div class="col-12 text-{{$position}}" style="{{if $margin}} margin:{{$margin}};{{end}}">        
+        <a href="{{$href}}" class="{{$class}} text-{{$textTransform}}" target="{{$target}}">{{- .Inner | markdownify -}}</a>
+    </div> 
+</div>
+
+{{end}}

@@ -1,14 +1,19 @@
 
-
+{{$headerTheme := .Params.headerTheme}}
 <!--Header-->
 <header class="{{ if not .IsHome}}hm-b70{{end}}">    
-    <nav class="navbar navbar-expand-md navbar-light fixed-top {{ if not .IsHome}}header-scrolled{{ end }}">
+    <nav class="navbar navbar-expand-md  fixed-top {{ if not .IsHome}} {{if $headerTheme}}navbar-light{{else}}header-scrolled{{ end }}{{ end }}">
       <div class="container">        
           <a class="navbar-brand" href="/" data-aos="zoom-in">
             {{ if .IsHome}}
               <img src="{{.Site.Params.logo | relURL }}" alt="{{.Site.Title }}"> 
               {{else}}
-              <img src="{{.Site.Params.logo2 | relURL }}" alt="{{.Site.Title }}">
+              {{if $headerTheme}}
+              <img src="{{.Site.Params.logo | relURL }}" alt="{{.Site.Title }}"> 
+              {{else}}                
+                <img src="{{.Site.Params.logo2 | relURL }}" alt="{{.Site.Title }}">
+              {{end}}
+
             {{ end }}
             
           </a>

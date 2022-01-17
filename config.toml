@@ -140,7 +140,6 @@ releasedOn = "Oct 10, 2021"
     taskLists = true
     extensions = ["hardLineBreak"]
 
-
   [markup.highlight]
     anchorLineNos = false
     codeFences = true

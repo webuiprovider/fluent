@@ -1,13 +1,11 @@
 
 {{ define "main" }}
 
-    {{- partial "header.html" . -}}  
-    {{- partial "hero-inner.html" . -}} 
+    {{- partial "header.html" . -}} 
     {{- partial "lastest-version.html" . -}}
-    {{- partial "knowledge-base.html" . -}}
+    <!--{{- partial "knowledge-base.html" . -}}
     {{- partial "new-changes.html" . -}}
-    {{- partial "contributor.html" . -}}
-    {{- partial "older-ver.html" . -}}  
+     {{- partial "older-ver.html" . -}}   -->
 
     <section class="section doc-content">
         <div class="container">
@@ -18,4 +16,7 @@
             </div>
         </div>
     </section>
+
+    <!-- {{- partial "contributor.html" . -}} -->
+
 {{ end }}

@@ -43,13 +43,17 @@ performance:
     description: IProven across distributed cloud and container environments. Highly available with I/O handlers to store data for disaster recovery.
     heightlightText: "> 1pb data throughput across thousands of sources and destinations daily"
   - heading: Flexible
-    icon: /images/extensible.svg
+    icon: /images/flexible.svg
     description: Granular management of data parsing and routing.  Filtering and enrichment to optimize security and minimize cost.
     heightlightText: "> 1 Billion sources managed by Fluent Bit - from IoT Devices to Windows and Linux servers."
   - heading: Efficient
     icon: /images/metrics.svg
     description: "Lightweight, asynchronous design optimizes resource usage: CPU, memory, disk I/O, network. No more OOM errors!"
     heightlightText: "~ 450kb minimal footprint maximizes asset support. Zero external dependencies."
+  - heading: Extensible
+    icon: /images/extensible-new.svg
+    description: "Integration with all your technology - cloud native services, containers, streaming processors, and data backends."
+    heightlightText: "80+ Plugins for inputs, filters, analytics tools and outputs."
 ctaBoxed: 
   enabled: true
   position: 4
@@ -104,37 +108,7 @@ features:
   position: 5
   heading: The Fluent Bit Advantage
   subHeading:  Fluent Bit is purpose built for high scale data observability <br> in any dynamic, distributed environment
-  lists:
-  - heading: Event-Driven Architecture
-    link: "#"
-    linkText: ""
-    icon: "/images/event-driven-architecture.svg"
-    description: Fully event driven design, leverages the operating system API for performance and reliability.  All operations to collect and deliver data are asynchronous
-  - heading: Dynamic Routing
-    link: "#"
-    linkText: ""
-    icon: "/images/dynamic-routing.svg"
-    description: Optimized data parsing and routing to improve security and reduce overall cost. Distribute data to multiple destinations with a zero copy strategy
-  - heading: Flexible Configuration
-    link: "#"
-    linkText: ""
-    icon: "/images/flexible-configuration.svg"
-    description: Simple, granular controls enable detailed orchestration and management of data collection and transfer across your entire ecosystem
-  - heading: Robust I/O Handler
-    link: "#"
-    linkText: ""
-    icon: "/images/robust-handler.svg"
-    description: An abstracted I/O layer supports high-scale read/write operations and enables optimized data routing and support for stream processing
-  - heading: Upstream Manager
-    link: "#"
-    linkText: ""
-    icon: "/images/upstream-manager-sm.svg"
-    description: Removes challenges with handling TCP connections to upstream data sources. Simplifies connection process, manages timeout/network exceptions and Keepalived states
-  - heading: Security & TLS
-    link: "#"
-    linkText: ""
-    icon: "/images/security-TLS-ms.svg"
-    description: When delivering data to destinations, output connectors inherit full TLS capabilities in an abstracted way. Add your certificates as required.
+  lists: true
 cta:
   enabled: true
   position: 6
