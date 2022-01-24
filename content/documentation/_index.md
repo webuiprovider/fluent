@@ -67,7 +67,7 @@ https://docs.fluentbit.io/manual/installation/upgrade_notes
 
 #### Contributors
 
-On every release, there are many people involved doing contributions on different areas like bug reporting, troubleshooting, documentation and coding, without these contributions from the community, the project won’t be the same and won’t be in the good shape that it is now. So THANK YOU! to everyone who takes part of this journey! 
+On every release, there are many people involved doing contributions on different areas like bug reporting, troubleshooting, documentation and coding, without these contributions from the community, the project won’t be the same and won’t be in the good shape that it is now. So THANK YOU! to everyone who takes part of this journey!
 
 - Stephen Lee
 - Eduardo Silva

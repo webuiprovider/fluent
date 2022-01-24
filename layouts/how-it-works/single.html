@@ -5,9 +5,9 @@
             <div class="row top-overview py-100 pb-5">
                 <div class="col-12 text-center">
                     <h5>{{.Params.hero.desc | safeHTML}} </h5>
-                    <h2 class="my-3">{{.Params.hero.heading | safeHTML }}</h2>
+                    <h2 class="my-3">{{.Params.hero.heading  | safeHTML }}</h2>
                     <img src="{{.Params.hero.image}}" alt="{{.Params.hero.heading}}" class="img-fluid mb-4">
-                    <h6>{{.Params.hero.text | safeHTML}}</h6>
+                    <h6>{{.Params.hero.text | markdownify | safeHTML}}</h6>
                 </div>
             </div>
             <div class="row d-none">
@@ -21,7 +21,7 @@
             </div>            
            
             {{if eq .Params.advantage true }}  
-                <div class="mt-2 mb-5">                      
+                <div class="mt-2 mb-8">                      
                     {{- partial "advantage.html" . -}}
                 </div>    
             {{end}}

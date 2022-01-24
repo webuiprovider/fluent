@@ -2,16 +2,14 @@
     <div class="col-md-6 col-lg-6">
         <div class="his-img">
             <img src="{{.Params.history.image}}" alt="{{.Params.history.heading}}" class="img-fluid">
-        </div>
-        
+        </div>        
     </div>
-    <div class="col-md-6 col-lg-6">
-        
+    <div class="col-md-6 col-lg-6">        
         <div class="info mt-5">
             <h4 class="mb-4">
                 {{.Params.history.heading}}
             </h4>
-            {{.Params.history.text | safeHTML}}
+            {{.Params.history.text | markdownify | safeHTML}}
         </div>
     </div>
 </div>

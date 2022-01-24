@@ -12,7 +12,7 @@ copyright = "© 2021 Fluent Bit. All rights reserved"
 lastVersion = "V1.8.8"
 releasedOn = "Oct 10, 2021"
 	         	         
-   
+   [menu]
     [[menu.main]]
         identifier = "documentation"
         url = "https://docs.fluentbit.io/manual"
@@ -38,11 +38,7 @@ releasedOn = "Oct 10, 2021"
         identifier = "Community"
         url = "/community/"
         name = "Community"
-        weight = 5   
-    [[menu.main]]
-        url = "/overview/"
-        name = "Overview"
-        weight = 6
+        weight = 5 
     [[menu.main]]
         identifier = "blog"
         url = "/blog/"

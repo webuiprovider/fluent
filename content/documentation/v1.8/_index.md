@@ -1,8 +1,9 @@
 ---
 title: 'Fluent Bit v1.8 Series'
 description: "[Fluent Bit v1.8](https://github.com/fluent/fluent-bit/tree/1.8) is the new **stable branch** for production usage. Based on bug reports or specific minor feature requests, we do quick releases upon demand. Below is a list of the notes for each version."
-url: '/documentation/v1.8/'
+permalink: '/documentation/v1.8/'
 latestVer:
+  light: true
   heading: "Fluent Bit v1.8.2 is out!"
   subHeading: "New release on Jul 20, 2021,"
   text: "Check out the Release Notes, read the Updated Documentation or jump directly to the Downloads Section."

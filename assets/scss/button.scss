@@ -1,0 +1,72 @@
+
+.btn-primary{
+    background: #30B99E;
+    border: $green;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: center;  
+    padding: 20px 65px;
+    text-transform: uppercase;
+    color: $lightGray;
+    transition: 0.4ms ease;
+  
+    &:hover{
+      background: linear-gradient(124.58deg, #3D65AF -57.52%, #2372B8 3.4%, #00B8BB 99.76%);
+      text-decoration: none;
+    }
+  }
+  
+  .btn-border{
+    border: 2px solid #282E38;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #282E38; 
+    padding: 10px 20px;
+  
+    &:hover{    
+      background: #30B99E;
+      color: #fff;
+      border-color: #30B99E;
+    }
+  }
+
+  
+.btn-gradient{
+  // background: linear-gradient(119.52deg, #3D65AF -2.32%, #2372B8 24.34%, #00B8BB 84.39%);
+  // border-radius: 6px;
+  
+  background: linear-gradient(124.58deg, #3D65AF -57.52%, #2372B8 3.4%, #00B8BB 99.76%);
+  border-radius: 5px;
+  flex: none;
+  // display: flex;
+  order: 3;
+  flex-grow: 0;
+  margin: 9px 0px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 65px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: 'salt' on, 'liga' off;
+  color: #FFFFFF;
+  text-decoration: none;
+
+  &:hover{
+    color: #FFFFFF;
+    background: linear-gradient(119.52deg,  #00B8BB -2.32%, #2372B8 24.34%, #3D65AF 84.39%);
+    text-decoration: none;
+  }
+}
+

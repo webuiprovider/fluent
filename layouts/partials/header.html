@@ -13,12 +13,11 @@
               {{else}}                
                 <img src="{{.Site.Params.logo2 | relURL }}" alt="{{.Site.Title }}">
               {{end}}
-
-            {{ end }}
-            
+            {{ end }}            
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa fa-bars"></i>
           </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto" data-aos="fade-left" data-aos-delay="100">
@@ -29,7 +28,8 @@
               {{ if .HasChildren }}
                 <!-- Navbar dropdown -->
                 <li class="nav-item dropdown" >
-                    <a href="#" id="{{ .Name }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }} {{ if $active }}active{{ end }}" > {{ .Name }}  </a>
+                    <a href="#" id="{{ .Name }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                    class='nav-link dropdown-toggle {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }} {{ if $active }}active{{ end }}' > {{ .Name }}  </a>
                     <div class="dropdown-menu" aria-labelledby="{{ .Name }}">
                         {{ range .Children }}
                         <a href="{{ .URL }}" class="dropdown-item">{{ .Name }}</a>
@@ -37,21 +37,17 @@
                     </div>
                 </li>
               {{ else }}
-                {{if .Pre}}
-                  
+                {{if .Pre}}                  
                   <li class="nav-item">                    
                     <a href="{{ .URL  }}" class="nav-link "><img src="{{.Pre}}" alt="{{.Identifier}}"></a>
                   </li>
                   {{else}}
                   <li class="nav-item">
-                    <a href="{{ .URL  }}" class="nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }} {{ if $active }}active{{ end }}"  {{if eq .Identifier "documentation" }} target="_blank" {{end}}>{{.Name}}
-                     
-                    </a>
+                    <a href="{{ .URL  }}" class='nav-link {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }} {{ if $active }}active{{ end }}'  {{if eq .Identifier "documentation" }} target="_blank" {{end}}>{{.Name}}
+                     </a>
                   </li>
-
                 {{end}}
-              {{ end }}
-              
+              {{ end }}              
             {{end}}
           
 

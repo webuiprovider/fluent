@@ -1,0 +1,31 @@
+
+{{$data := .Params.enterprise }}
+
+{{ if $data.enabled }}
+<section class="section enterprise mt-0 py-0" style="order: {{$data.position}};">
+    <div class="container">
+        {{range $data.list }}
+        <div class="row mb-5">
+            <div class="col-sm-12 col-md-10 col-lg-8 offset-0 offset-md-1 offset-lg-2"> 
+                <div class="list-box">
+                    <div class="box-bg">
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="logo-area d-flex">                                
+                                    <img src="{{.logo}}" alt="{{.title}}">
+                                </div>
+                            </div>
+                            <div class="col-md-8 text-center text-sm-left">
+                                <h4 data-aos="zoom-in">{{.title}}</h4>
+                                <p>{{.description}}</p>
+                                <a href="{{.buttonUrl}}" target="{{.tabOpen}}" class="btn btn-primary">{{.buttonText}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{end}}
+    </div>
+</section>
+{{end}}

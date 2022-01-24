@@ -38,12 +38,12 @@
             </div>
             <div class="col-md-6 col-lg-5" data-aos="fade-left" data-aos-duration="2000">
                 <h4 class="text-gradient text-left mt-4">{{$data.info | safeHTML}}</h4>
-                <ul class="mb-4">
+                <ul>
                     {{range $data.lists}}
                     <li>{{.}}</li>
                     {{end}}
                 </ul>
-                <p><a href="{{$data.btnUrl | safeHTML}}" class="btn btn-gradient text-uppercase">{{$data.btnText | safeHTML}}</a></p>
+                <p><a href="{{$data.btnUrl | safeHTML}}" class="btn btn-primary text-uppercase">{{$data.btnText | safeHTML}}</a></p>
             </div>
         </div>
     </div>

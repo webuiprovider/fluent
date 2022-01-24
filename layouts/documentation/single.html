@@ -1,7 +1,14 @@
 {{ define "main" }}    
-    {{- partial "header.html" . -}}  
-    {{- partial "hero-inner.html" . -}} 
-    {{- partial "lastest-version.html" . -}}
+    {{- partial "header.html" . -}}
+    {{if eq .RelPermalink "/documentation/older-versions/" }}
+        {{- partial "top-section.html" . -}} 
+    {{else}}        
+        {{- partial "hero-inner.html" . -}} 
+    {{end}}
+    {{if eq .RelPermalink "/documentation/older-versions/" }}
+        {{- partial "older-ver.html" . -}}
+    {{end}}
+
     {{- partial "knowledge-base.html" . -}}
     {{- partial "new-changes.html" . -}}
     {{- partial "contributor.html" . -}}
@@ -14,5 +21,9 @@
             </div>
         </div>
     </section>
-    {{- partial "older-ver.html" . -}}     
+
+    
+    {{- partial "lastest-version.html" . -}}
+    
+    
 {{ end }}
