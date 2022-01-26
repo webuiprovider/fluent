@@ -78,4 +78,4 @@ On every release, there are many people involved doing contributions on differen
 
 {{< /contributor-list >}}
 
-{{% button href="/documentation/older-versions/"  position="center" text-transform="" class="" margin="0px 0px 30px"  %}}See older version{{% /button %}}
+{{% button href="/documentation/older-versions/"  position="center" text-transform="" class="" margin="0px 0px 30px"  %}}See Older Versions{{% /button %}}

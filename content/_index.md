@@ -8,7 +8,7 @@ hero:
   tag: "Deployed Over One Billion Times"
   subHeading: Fluent Bit is a super fast, lightweight, and highly scalable logging and metrics processor and <br>forwarder.  It is the preferred choice for cloud and containerized environments.
   btnText: DOWNLOAD NOW
-  btnUrl: "#"
+  btnUrl: "https://docs.fluentbit.io/manual/installation/getting-started-with-fluent-bit"
   version: V1.8.8 
   releasedDate: Octl 10, 2021
   noteText: Read the notes »
@@ -19,7 +19,7 @@ howitworks:
   position: 5
   image: /images/how-back.svg   
   btnText: Read how it works
-  btnUrl: "#performance"
+  btnUrl: "/how-it-works/"
   info: Fluent Bit enables you to collect logs and metrics from multiple sources, enrich them with filters, and distribute them to any defined destination.
   lists: 
   - Optimized data parsing and routing
@@ -39,19 +39,19 @@ performance:
   subHeading:  A robust, lightweight, and portable architecture for high throughput with low CPU and memory usage <br> from any data source to any destination.
   lists:
   - heading: Scalable
-    icon: /images/lightweight.svg
-    description: IProven across distributed cloud and container environments. Highly available with I/O handlers to store data for disaster recovery.
+    icon: /images/scalable.svg
+    description: Proven across distributed cloud and container environments. Highly available with I/O handlers to store data for disaster recovery.
     heightlightText: "> 1pb data throughput across thousands of sources and destinations daily"
   - heading: Flexible
     icon: /images/flexible.svg
     description: Granular management of data parsing and routing.  Filtering and enrichment to optimize security and minimize cost.
     heightlightText: "> 1 Billion sources managed by Fluent Bit - from IoT Devices to Windows and Linux servers."
   - heading: Efficient
-    icon: /images/metrics.svg
+    icon: /images/efficient.svg
     description: "Lightweight, asynchronous design optimizes resource usage: CPU, memory, disk I/O, network. No more OOM errors!"
     heightlightText: "~ 450kb minimal footprint maximizes asset support. Zero external dependencies."
   - heading: Extensible
-    icon: /images/extensible-new.svg
+    icon: /images/extensible.svg
     description: "Integration with all your technology - cloud native services, containers, streaming processors, and data backends."
     heightlightText: "80+ Plugins for inputs, filters, analytics tools and outputs."
 ctaBoxed: 

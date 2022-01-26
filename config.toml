@@ -47,7 +47,7 @@ releasedOn = "Oct 10, 2021"
 
     [[menu.main]]
         identifier = "slack"
-        url = "/slack/"
+        url = "https://launchpass.com/fluent-all"
         name = "slack"
         weight = 8
         pre = "/images/slack.svg"
@@ -82,15 +82,11 @@ releasedOn = "Oct 10, 2021"
     icon  = "fa fa-slack" 
     name = "slack"
  [[params.social]]
-    url   = "#"
-    icon  = "fa fa-rss" 
-    name = "rss"
- [[params.social]]
     url   = "https://twitter.com/fluentbit"
     icon  = "fa fa-twitter" 
     name = "twitter"
  [[params.social]]
-    url   = "#"
+    url   = "https://www.youtube.com/results?search_query=fluentbit"
     icon  = "fa fa-youtube-play" 
     name = "youtube"
 

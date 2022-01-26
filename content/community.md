@@ -24,14 +24,14 @@ community:
   - title: Newsletter
     description: Sign up to receive our newsletter for product information, Fluent Bit events, and opportunities to contribute to the project.
     logo: /images/mail.svg
-    buttonUrl: "#"
+    buttonUrl: "https://www.fluentd.org/newsletter"
     buttonText: "Sign up"
     tabOpen: ""
 meeting:
   enabled: true
   title: Fluent Bit Monthly Community Meeting
   description: Held the last Thursday of every month. Click the button below to add to your calendar.  
-  buttonUrl: "#"
+  buttonUrl: "https://docs.google.com/document/d/1vJvsn8E0SanLO1R0X3RC1qTw0XQK_7q75sZ8IbWAu-g/edit#heading=h.6bj34cqtq5cp"
   buttonText: "Add to calendar"
   tabOpen: ""
 

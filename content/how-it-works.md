@@ -14,7 +14,8 @@ preferred:
  image: "/images/sending-data.svg"
 advantage: true
 btnAdvText: "Read documentation"
-btnAdvUrl: "#"
+btnAdvUrl: "https://docs.fluentbit.io/manual"
+linkNewTab: "true"
 history:
   heading: "A Brief History of Fluent Bit"
   image: "/images/history.jpg"

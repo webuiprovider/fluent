@@ -13,13 +13,13 @@ enterprise:
   - title: Calyptia
     description: Support services and Enterprise features from the creators and maintainers of Fluentd and Fluent Bit.
     logo: /images/calyptia.svg
-    buttonUrl: "#"
+    buttonUrl: "https://calyptia.com/"
     buttonText: "REad More"
     tabOpen: ""
   - title: ITOCHU Techno-Solutions America, Inc.
     description: "Enterprise services from a global IT solution provider.  Services include: consulting, technology enablement, and a global service desk."
     logo: /images/fluentd.svg
-    buttonUrl: "#"
+    buttonUrl: "https://fluentd.ctc-america.com/"
     buttonText: "REad More"
     tabOpen: ""
 ---
