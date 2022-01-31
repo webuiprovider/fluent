@@ -1,5 +1,7 @@
+{{$data := .Site.Params.latestVer }}
+
 {{if .Params.latestVer }}
-<section class="section latest-ver {{if .Params.latestVer.light}}light{{end}}">
+<section class='section latest-ver {{if ne .RelPermalink "/documentation/" }} {{if $data.light}}light{{end}} {{end}}'>
     <div class="container">
         <div class="row">
             <div class="col"><h4>Lastest Version</h4></div>
@@ -9,14 +11,16 @@
                 <div class="ver-box">                 
                     <div class="row">
                         <div class="col-md-6 offset-md-6 info">
-                            <h6>{{.Params.latestVer.subHeading}}</h6>
-                            <h3 class="mb-2">{{.Params.latestVer.heading}}</h3>
-                            {{if .Params.latestVer.text}}
-                                <p>{{.Params.latestVer.text}}</p>
+                            <h6>{{$data.subHeading}}</h6>
+                            <h3 class="mb-2">{{$data.heading}}</h3>
+                            {{if ne .RelPermalink "/documentation/" }}
+                                {{if $data.text}}
+                                    <p>{{$data.text}}</p>
+                                {{end}}
                             {{end}}
-                            <div class="py-4"><a href="{{.Params.latestVer.btnUrl}}" class="btn-primary text-uppercase">{{.Params.latestVer.btnText}}</a></div> 
+                            <div class="py-4"><a href="{{$data.btnUrl}}" class="btn-gradient text-uppercase">{{$data.btnText}}</a></div> 
                             <p class="mt-2">
-                                <small>{{.Params.latestVer.smallText | safeHTML}}</small>
+                                <small>{{$data.smallText | safeHTML}}</small>
                             </p>
                             
                         </div>
@@ -24,13 +28,16 @@
                 </div>
             </div>
         </div>
+        {{if ne .RelPermalink "/documentation/" }}
 
-        {{if .Params.latestVer.bottomText}}
+
+        {{if $data.bottomText}}
         <div class="row">
             <div class="col text-right">
-                <a href="{{ .Params.latestVer.bottomUrl}}" class="read">{{ .Params.latestVer.bottomText}}</a>
+                <a href="{{ $data.bottomUrl}}" class="read">{{ $data.bottomText}}</a>
             </div>
         </div>
+        {{end}}
         {{end}}
 
     </div>

@@ -12,13 +12,13 @@ community:
   - title: Slack
     description: Join the Slack Community for Fluent Bit and Fluentd. Engage with experts, ask questions, and share best practices.
     logo: /images/slack-2.svg
-    buttonUrl: "#"
+    buttonUrl: "https://launchpass.com/fluent-all"
     buttonText: "Join"
     tabOpen: ""
   - title: Twitter
     description: Follow @fluentbit for the latest news and announcements. Share your ideas and learn from the community.
     logo: /images/twitter.svg
-    buttonUrl: "#"
+    buttonUrl: "https://twitter.com/fluentbit"
     buttonText: "Join"
     tabOpen: ""
   - title: Newsletter

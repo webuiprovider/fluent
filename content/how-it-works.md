@@ -7,12 +7,55 @@ hero:
  desc: "Fluent Bit was designed for speed, scale, and flexibility <br> in a very lightweight, efficient package."
  image: "/images/overview-new.svg"
  text: >
-  An open source Log Processor and Forwarder which allows you to collect any data like metrics and logs\
-   from different sources, enrich them with filters and send them to multiple destinations. 
-preferred:
- heading: "An example of sending data to Kafka and Splunk"
- image: "/images/sending-data.svg"
-advantage: true
+  An open source Log Processor and Forwarder which allows you to collect\
+  
+  any data like metrics and logs from different sources, enrich them with filters and\
+  
+  send them to multiple destinations. 
+howtoworks:
+- text: > 
+   Fluent Bit can read from\
+   
+   local files, network devices, or **scrape metrics in Prometheus**\
+
+   format from your server.
+- text: > 
+   All events are **automatically
+   
+   tagged** to determine filtering, 
+   
+   routing, parsing, modification 
+   
+   and output rules.
+- text: > 
+   Filters can modify data by calling
+
+   **an API (E.g. Kubernetes),**\
+
+   remove extraneous fields,\
+
+   or add values.
+- text: > 
+   Built-in reliability means if you hit
+
+   a network or server outage\
+
+   **you will be able to resume**\
+
+   from where you left off\
+
+   without data loss.
+- text: > 
+   Fluent Bit can send data to a 
+   
+   **multitude of locations,**\
+
+   including popular destinations\
+
+   like Splunk, Elasticsearch,\
+   
+   OpenSearch, Kafka, and more.
+
 btnAdvText: "Read documentation"
 btnAdvUrl: "https://docs.fluentbit.io/manual"
 linkNewTab: "true"

@@ -54,6 +54,18 @@ releasedOn = "Oct 10, 2021"
         slack = "/images/slack-w.svg"
 
     
+    [params.latestVer]
+    light = "true"
+    heading = "Fluent Bit v1.8.12 is out!"
+    subHeading = "New release on Jan 24, 2022,"
+    text = "Check out the Release Notes, read the Updated Documentation or jump directly to the Downloads Section."
+    smallText = "We are part of a wide community, <strong>no vendor lock-in.</strong>"
+    btnText = "Download Now"
+    btnUrl = "#"
+    bottomText = ":: Read Documentation"
+    bottomUrl = "#"
+
+    
     [[params.footer.column]]
         url = "#"
         name = "Terms & Conditions"
@@ -79,16 +91,16 @@ releasedOn = "Oct 10, 2021"
 
  [[params.social]]
     url   = "https://launchpass.com/fluent-all"
-    icon  = "fa fa-slack" 
+    icon  = "/images/slack-color.svg" 
     name = "slack"
  [[params.social]]
     url   = "https://twitter.com/fluentbit"
-    icon  = "fa fa-twitter" 
+    icon  = "/images/twitter-color.svg" 
     name = "twitter"
- [[params.social]]
-    url   = "https://www.youtube.com/results?search_query=fluentbit"
-    icon  = "fa fa-youtube-play" 
-    name = "youtube"
+#  [[params.social]]
+#     url   = "https://www.youtube.com/results?search_query=fluentbit"
+#     icon  = "fa fa-youtube-play" 
+#     name = "youtube"
 
 
 
@@ -96,6 +108,8 @@ releasedOn = "Oct 10, 2021"
     # posts = "blog/:year/:month/:title/"
     posts = "blog/:title/"
     pages = ":slug/"
+
+
 
 
 

@@ -9,25 +9,13 @@
                     <img src="{{.Params.hero.image}}" alt="{{.Params.hero.heading}}" class="img-fluid mb-4">
                     <h6>{{.Params.hero.text | markdownify | safeHTML}}</h6>
                 </div>
-            </div>
-            <div class="row d-none">
-                <div class="col-12">
-                    <div class="preferred text-center">
-                        <h3 class="mb-5">{{.Params.preferred.heading | safeHTML }}</h3>
-                        <img src="{{.Params.preferred.image}}" alt="preferred" class="img-fluid">
-                    </div>
-
-                </div>
-            </div>            
-           
-            {{if eq .Params.advantage true }}  
-                <div class="mt-2 mb-8">                      
-                    {{- partial "advantage.html" . -}}
-                </div>    
-            {{end}}
+            </div> 
+              
+            <div class="mt-2 mb-8">                      
+                {{- partial "how-its-work-boxes.html" . -}}
+            </div>  
 
             {{if .Params.history}}
-
                 {{- partial "history.html" . -}}
             {{end}}
                 

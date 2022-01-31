@@ -1,0 +1,19 @@
+
+
+{{$data := .Params.howtoworks }}
+<div class="row justify-content-center">
+    {{range $data }}  
+        <div class="col-md-4 col-sm-6 features-list mb-4">  
+            <div class="list-box howtoworks justify-content-center align-items-center text-center" data-aos="flip-up">
+               <p class="m-0">{{.text | markdownify}}</p>
+          
+            </div>  
+        </div>
+    {{end}}
+</div>
+
+{{if .Params.btnAdvText}}
+<div class="row text-center mt-5">
+    <a href="{{.Params.btnAdvUrl}}"  target="_blank"  class="btn btn-gradient aos-init text-uppercase mx-auto" data-aos="zoom-in">{{.Params.btnAdvText}}</a>
+</div>
+{{end}}

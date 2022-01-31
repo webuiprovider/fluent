@@ -56,36 +56,35 @@
     
     <div class="container foot-top">
         <div class="row">
-            <div class="col-md-5 col-sm-4 footer-link d-flex align-items-center">
-                {{range .Site.Data.footer}}
-                    {{if eq .linkHeading "Download"}}
-                        <a href="{{ .buttonUrl | safeHTML}}" class="btn btn-primary">{{ .button | safeHTML}}</a>
-                        <div class="ml-3">                            
-                            <p class="last-ver text-green">Last Version {{$lastVer }}  </p>
-                            <p class="ver  mt-1 mb-0">Released On <strong>{{$releasedOn}}</strong></p>  
-                        </div> 
-                    {{end}}
-                {{end}}
-            </div>
             <div class="col-md-3 col-sm-4">
-                <div class="footer-right new-footer pl-0 pl-md-3 align-items-center">
+                <div class="footer-right new-footer pl-0 pl-md-3 align-items-center f-bod-right">
                         <div class="text-center text-md-left">
-                            <p class="mb-2"><strong>Stay Updated</strong></p>
-    
-                            <ul class="socail-link">
+                            <p class="mb-2 d-inline mr-2"><strong>Stay Updated</strong></p>    
+                            <ul class="socail-link  d-inline">
                                 {{range .Site.Params.social }}
-                                    <li><a href="{{.url}}"><i class="{{.icon}}"></i></a></li>
+                                    <li><a href="{{.url}}"><img src="{{.icon}}" alt=""></a></li>
                                 {{end}}
                             </ul>
 
                         </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4 ">
+            <div class="col-md-6 col-sm-4 footer-link d-flex align-items-center justify-content-center f-bod mt-3 mt-sm-0">
+                {{range .Site.Data.footer}}
+                    {{if eq .linkHeading "Download"}}
+                    <div class="ml-3">                            
+                        <p class="last-ver text-right">Last Version {{$lastVer }}  </p>
+                        <p class="ver  mt-1 mb-0">Released On <strong>{{$releasedOn}}</strong></p>  
+                    </div> 
+                        <a href="{{ .buttonUrl | safeHTML}}" class="btn btn-gradient">{{ .button | safeHTML}}</a>
+                    {{end}}
+                {{end}}
+            </div>
+            <div class="col-md-3 col-sm-4 ">
                 <div class="footer-right new-footer pl-0 pl-md-3 align-items-center">
                     <div class="text-center text-md-left">
                         <img src="{{.Site.Params.footer_logo}}" alt="{{.Site.Title}}">
-                        <p class="mt-3 ">The only log forwarder & stream processor <br> <strong>that you ever need.</strong></p> 
+                        <!-- <p class="mt-3 ">The only log forwarder & stream processor <br> <strong>that you ever need.</strong></p>  -->
 
                     </div>                   
                 </div>
