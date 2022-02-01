@@ -2,15 +2,7 @@
 title: 'Fluent Bit v0.12 Series'
 description: 'Old Fluent Bit v0.12 series. Based on bug reports or specific minor feature requests, we do quick releases upon demand. Below is a list of the notes for each version.'
 url: '/documentation/v0.12/'
-latestVer:
-  heading: "Fluent Bit v1.8.2 is out!"
-  subHeading: "New release on Jul 20, 2021,"
-  text: "Check out the Release Notes, read the Updated Documentation or jump directly to the Downloads Section."
-  smallText: "We are part of a wide community, <strong>no vendor lock-in.</strong>"
-  btnText: "Download Now"
-  btnUrl: "https://docs.fluentbit.io/manual/installation/getting-started-with-fluent-bit"
-  bottomText: ":: Read Documentation"
-  bottomUrl: "#"
+latestVer: true
 releaseNotes:
   heading: "Release Notes v1.8.3"
   version: "v1.8.3"
