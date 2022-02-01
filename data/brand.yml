@@ -19,6 +19,9 @@
 - logo: "/images/brands/sumo-logic.svg"
   name: "sumo logic"
   weight: 7
+- logo: "/images/brands/logiq.svg"
+  name: "logiq"
+  weight: 7
 - logo: "/images/brands/trend.svg"
   name: "trend"
   weight: 8
@@ -33,6 +36,9 @@
   weight: 19
 - logo: "/images/brands/couchbase.svg"
   name: "couchbase"
+  weight: 21
+- logo: "/images/brands/humio.svg"
+  name: "humio"
   weight: 21
 - logo: "/images/brands/linkedin.svg"
   name: "linkedin"
