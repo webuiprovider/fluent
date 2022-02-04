@@ -1,7 +1,7 @@
 ---
 title: 'Fluent Bit v1.6 Series'
 description: "<a href='https://github.com/fluent/fluent-bit/tree/1.6'>Fluent Bit v1.6</a> is the old branch. Based on bug reports or specific minor feature requests, we do quick releases upon demand. Below is a list of the notes for each version."
-url: '/documentation/v1.6/'
+url: "/announcements/v1.6/"
 latestVer: true
 releaseNotes:
   heading: "Release Notes v1.8.3"

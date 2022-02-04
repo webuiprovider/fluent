@@ -1,7 +1,8 @@
 ---
 title: 'Fluent Bit v0.11 Series'
 description: 'The old Fluent Bit v0.11 Series. Based on bug reports or specific minor feature requests, we do quick releases upon demand. Below is a list of the notes for each version. '
-url: '/documentation/v0.11/'
+url: "/announcements/v0.11/"
+herobg: "/images/hero@2x.jpg"
 latestVer: true
 releaseNotes:
   heading: "Release Notes v1.8.3"

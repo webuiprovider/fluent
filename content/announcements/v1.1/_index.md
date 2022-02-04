@@ -1,7 +1,8 @@
 ---
 title: 'Fluent Bit v1.1 Series'
 description: "Old <a href='https://github.com/fluent/fluent-bit/tree/1.1'>Fluent Bit v1.1</a> series. Based on bug reports or specific minor feature requests, we do quick releases upon demand. Below is a list of the notes for each version."
-url: '/documentation/v1.1/'
+url: "/announcements/v1.1/"
+herobg: "/images/hero@2x.jpg"
 latestVer: true
 releaseNotes:
   heading: "Release Notes v1.8.3"
