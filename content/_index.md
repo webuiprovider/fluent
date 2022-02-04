@@ -9,10 +9,10 @@ hero:
   subHeading: Fluent Bit is a super fast, lightweight, and highly scalable logging and metrics processor and <br>forwarder.  It is the preferred choice for cloud and containerized environments.
   btnText: DOWNLOAD NOW
   btnUrl: "https://docs.fluentbit.io/manual/installation/getting-started-with-fluent-bit"
-  version: V1.8.8 
-  releasedDate: Octl 10, 2021
+  version: v1.8.12 
+  releasedDate: Jan 24, 2022
   noteText: Read the notes »
-  noteUrl: #
+  noteUrl: "/announcements/"
   image: "/images/hero.svg"
 howitworks: 
   enabled: true
@@ -58,8 +58,8 @@ ctaBoxed:
   enabled: true
   position: 4
   image: /images/cloun-native.svg
-  gitUser: "webuiprovider"
-  gitRepo: "fluent"
+  gitUser: "fluent"
+  gitRepo: "fluent-bit/"
   text: "Fluent Bit is a CNCF (Cloud Native Computing Foundation) graduated project under the umbrella of Fluentd."
   highlightText: "We are part of a large open source community. No vendor lock-in."
 highPerformance:

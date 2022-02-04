@@ -14,25 +14,25 @@ community:
     logo: /images/slack-2.svg
     buttonUrl: "https://launchpass.com/fluent-all"
     buttonText: "Join"
-    tabOpen: ""
+    tabOpen: "_blank"
   - title: Twitter
     description: Follow @fluentbit for the latest news and announcements. Share your ideas and learn from the community.
     logo: /images/twitter.svg
     buttonUrl: "https://twitter.com/fluentbit"
     buttonText: "Join"
-    tabOpen: ""
+    tabOpen: "_blank"
   - title: Newsletter
     description: Sign up to receive our newsletter for product information, Fluent Bit events, and opportunities to contribute to the project.
     logo: /images/mail.svg
     buttonUrl: "https://www.fluentd.org/newsletter"
     buttonText: "Sign up"
-    tabOpen: ""
+    tabOpen: "_blank"
 meeting:
   enabled: true
   title: Fluent Bit Monthly Community Meeting
   description: Held the last Thursday of every month. Click the button below to add to your calendar.  
   buttonUrl: "https://docs.google.com/document/d/1vJvsn8E0SanLO1R0X3RC1qTw0XQK_7q75sZ8IbWAu-g/edit#heading=h.6bj34cqtq5cp"
   buttonText: "Add to calendar"
-  tabOpen: ""
+  tabOpen: "_blank"
 
 ---

@@ -8,9 +8,9 @@ email = ""
 logo = "/images/logo.svg"
 logo2 = "/images/logo-white.svg"
 footer_logo = "/images/footer-logo.svg"
-copyright = "© 2021 Fluent Bit. All rights reserved"
-lastVersion = "V1.8.8"
-releasedOn = "Oct 10, 2021"
+copyright = "© 2022 Fluent Bit. All rights reserved"
+lastVersion = "v1.8.12"
+releasedOn = "Jan 24, 2022"
 	         	         
    [menu]
     [[menu.main]]
@@ -26,7 +26,7 @@ releasedOn = "Oct 10, 2021"
         weight = 2
     [[menu.main]]
         identifier = "release notes"
-        url = "/documentation/"
+        url = "/announcements/"
         name = "RELEASE NOTES"
         weight = 3    
     [[menu.main]]
@@ -61,9 +61,9 @@ releasedOn = "Oct 10, 2021"
     text = "Check out the Release Notes, read the Updated Documentation or jump directly to the Downloads Section."
     smallText = "We are part of a wide community, <strong>no vendor lock-in.</strong>"
     btnText = "Download Now"
-    btnUrl = "#"
+    btnUrl = "https://docs.fluentbit.io/manual/installation/getting-started-with-fluent-bit"
     bottomText = ":: Read Documentation"
-    bottomUrl = "#"
+    bottomUrl = "https://docs.fluentbit.io/manual/"
 
     
     [[params.footer.column]]

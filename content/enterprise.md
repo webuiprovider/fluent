@@ -15,11 +15,11 @@ enterprise:
     logo: /images/calyptia.svg
     buttonUrl: "https://calyptia.com/"
     buttonText: "read More"
-    tabOpen: ""
+    tabOpen: "_blank"
   - title: ITOCHU Techno-Solutions America, Inc.
     description: "Enterprise services from a global IT solution provider.  Services include: consulting, technology enablement, and a global service desk."
     logo: /images/fluentd.svg
     buttonUrl: "https://fluentd.ctc-america.com/"
     buttonText: "read More"
-    tabOpen: ""
+    tabOpen: "_blank"
 ---

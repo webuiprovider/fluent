@@ -776,6 +776,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
 
   .cta-info{
     width: 35%;
@@ -783,6 +784,7 @@ header{
     right: 20px;
     display: flex;    
     flex-direction: column;
+    top:0px;
 
     h4{
       font-style: normal;
@@ -802,7 +804,7 @@ header{
       line-height: 20px;
       display: flex;
       color: #FFFFFF;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
 
     .subscribe.input-group{
@@ -846,12 +848,41 @@ header{
 
         }
       }
-      
     
   }
   
 }
 
+.hs-form-48af09cd-021c-440c-8578-b843d962e36c_c1ffd9ff-11e1-44b9-b148-95b5203184bd .hs-form-field label:not(.hs-error-msg){
+  color: #fff !important;
+}
+
+.hs-form-iframe{        
+  .hs-form *{
+    color: #fff  !important;
+  }
+  label{
+    color: #fff !important;
+  }
+}
+.hs-form-iframe {
+  // border:1px solid #fff !important;
+  height: 160px !important;
+  // background: rgba(255, 255, 255, 0.5);
+  html body{    
+   
+    
+  }
+
+}
+.hs-form-iframe .hs-form-48af09cd-021c-440c-8578-b843d962e36c_7de634e7-ca9b-474e-a3db-2508f26a1be4.hs-form .hs_email.hs-email label {
+  color: #FFFFFF !important;
+  font-weight: 400;
+}
+
+.hs-form-48af09cd-021c-440c-8578-b843d962e36c_bfc98838-15fb-4da1-86ba-b57f33e687bb .hs-form-field label:not(.hs-error-msg) span{
+  color: #fff !important;
+}
 
 
 .socail-link{
@@ -914,11 +945,11 @@ border-radius: 16px;
 
 .var-highlight{
   // color: #C0AD60;
-  color: #fff;
+  color: #BABE52;
 }
 .string-highlight{
   // color: rgba(253, 149, 90, 0.8);
-  color: #fff;
+  color: #eb896b;
 
 }
 
@@ -1651,7 +1682,9 @@ border-radius: 16px;
 
 }
 
-
+.highlight>div{
+  padding: 10px
+}
 
 
 @import 'topsec';

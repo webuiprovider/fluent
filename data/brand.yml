@@ -1,4 +1,4 @@
-- logo: "/images/brands/gcloud.svg"
+- logo: "/images/brands/google-cloud.svg"
   name: "G cloud"
   weight: 1
 - logo: "/images/brands/microsoft.svg"
@@ -46,8 +46,8 @@
 - logo: "/images/brands/vmware.svg"
   name: "vmware"
   weight: 9
-- logo: "/images/brands/walemart.svg"
-  name: "walemart"
+- logo: "/images/brands/wallmart.svg"
+  name: "wallmart"
   weight: 10
 - logo: "/images/brands/transit.svg"
   name: "transit"
@@ -55,9 +55,6 @@
 - logo: "/images/brands/splunk.svg"
   name: "splunk"
   weight: 12
-- logo: "/images/brands/gaint-swarm.svg"
+- logo: "/images/brands/giant-swarm.svg"
   name: "gaintswarm"
   weight: 13
-- logo: "/images/brands/crowdstrike.svg"
-  name: "crowdstrike"
-  weight: 14

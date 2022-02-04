@@ -1,11 +1,11 @@
 {{ define "main" }}    
     {{- partial "header.html" . -}}
-    {{if eq .RelPermalink "/documentation/older-versions/" }}
+    {{if eq .RelPermalink "/announcements/older-versions/" }}
         {{- partial "top-section.html" . -}} 
     {{else}}        
         {{- partial "hero-inner.html" . -}} 
     {{end}}
-    {{if eq .RelPermalink "/documentation/older-versions/" }}
+    {{if eq .RelPermalink "/announcements/older-versions/" }}
         {{- partial "older-ver.html" . -}}
     {{end}}
 

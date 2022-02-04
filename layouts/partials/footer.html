@@ -62,7 +62,7 @@
                             <p class="mb-2 d-inline mr-2"><strong>Stay Updated</strong></p>    
                             <ul class="socail-link  d-inline">
                                 {{range .Site.Params.social }}
-                                    <li><a href="{{.url}}"><img src="{{.icon}}" alt=""></a></li>
+                                    <li><a href="{{.url}}" target="_blank"><img src="{{.icon}}" alt=""></a></li>
                                 {{end}}
                             </ul>
 
@@ -76,7 +76,7 @@
                         <p class="last-ver text-right">Last Version {{$lastVer }}  </p>
                         <p class="ver  mt-1 mb-0">Released On <strong>{{$releasedOn}}</strong></p>  
                     </div> 
-                        <a href="{{ .buttonUrl | safeHTML}}" class="btn btn-gradient">{{ .button | safeHTML}}</a>
+                        <a href="{{ .buttonUrl | safeHTML}}" target="_blank" class="btn btn-gradient">{{ .button | safeHTML}}</a>
                     {{end}}
                 {{end}}
             </div>
