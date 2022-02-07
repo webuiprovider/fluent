@@ -7,17 +7,16 @@ hero:
  desc: "Fluent Bit was designed for speed, scale, and flexibility <br> in a very lightweight, efficient package."
  image: "/images/overview-new.svg"
  text: >
-  An open source Log Processor and Forwarder which allows you to collect\
+  Fluent Bit enables you to collect event data from any source,
+
   
-  any data like metrics and logs from different sources, enrich them with filters and\
-  
-  send them to multiple destinations. 
+  enrich it with filters, and send it to any destination.
 howtoworks:
-- text: > 
+- text: >
    Fluent Bit can read from\
    
-   local files, network devices, or **scrape metrics in Prometheus**\
-
+   local files and network devices, and can **scrape metrics in the Prometheus**\
+   
    format from your server.
 - text: > 
    All events are **automatically

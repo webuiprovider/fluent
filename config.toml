@@ -66,12 +66,6 @@ releasedOn = "Jan 24, 2022"
     bottomUrl = "https://docs.fluentbit.io/manual/"
 
     
-    [[params.footer.column]]
-        url = "#"
-        name = "Terms & Conditions"
-        weight = 1
-
-
     [[params.footer.bottom]]
         url = "#"
         name = "Terms & Conditions"

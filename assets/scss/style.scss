@@ -382,7 +382,7 @@ header{
   .icon{    
     align-items: center;
     justify-content: left;
-    min-height: 60px;
+    min-height: 75px;
     display: flex;
     margin-bottom: 25px;
   }
@@ -847,42 +847,70 @@ header{
           color: #FFFFFF;
 
         }
+
+
+        .hbspt-form iframe.hs-form-iframe{
+          background: #089ba4;
+          padding: 10px;
+          html body .hbspt-form .hs-form-48af09cd-021c-440c-8578-b843d962e36c_ae2faee1-91c9-4f28-b88e-3ea4ac257d83.hs-form .hs-email.hs-fieldtype-text label#label-email-48af09cd-021c-440c-8578-b843d962e36c{
+            background: #00B8BB !important;
+            color: #ffffff !important;
+          }
+          .hs-form-48af09cd-021c-440c-8578-b843d962e36c_d95c151a-bbbd-4d96-b62d-74548d0d9be9.hs-form{
+            background: green;
+          }
+          html{
+            background: yellow;
+          } 
+          body .hbspt-form{
+
+            background: blue;
+          }
+          .hs_email.hs-email{
+            label{
+              color: #fff !important;
+            }
+          }
+        }
+
+        .hs-form-48af09cd-021c-440c-8578-b843d962e36c_c1ffd9ff-11e1-44b9-b148-95b5203184bd .hs-form-field label:not(.hs-error-msg){
+          color: #fff !important;
+        }
+        
+        .hs-form-iframe{        
+          .hs-form *{
+            color: #fff  !important;
+          }
+          label{
+            color: #fff !important;
+          }
+        }
+        .hs-form-iframe {
+          // border:1px solid #fff !important;
+          height: 160px !important;
+          // background: rgba(255, 255, 255, 0.5);
+          html body{    
+           
+            
+          }
+        
+        }
+        .hs-form-iframe .hs-form-48af09cd-021c-440c-8578-b843d962e36c_7de634e7-ca9b-474e-a3db-2508f26a1be4.hs-form .hs_email.hs-email label {
+          color: #FFFFFF !important;
+          font-weight: 400;
+        }
+        
+        .hs-form-48af09cd-021c-440c-8578-b843d962e36c_bfc98838-15fb-4da1-86ba-b57f33e687bb .hs-form-field label:not(.hs-error-msg) span{
+          color: #fff !important;
+        }
+
       }
     
   }
   
 }
 
-.hs-form-48af09cd-021c-440c-8578-b843d962e36c_c1ffd9ff-11e1-44b9-b148-95b5203184bd .hs-form-field label:not(.hs-error-msg){
-  color: #fff !important;
-}
 
-.hs-form-iframe{        
-  .hs-form *{
-    color: #fff  !important;
-  }
-  label{
-    color: #fff !important;
-  }
-}
-.hs-form-iframe {
-  // border:1px solid #fff !important;
-  height: 160px !important;
-  // background: rgba(255, 255, 255, 0.5);
-  html body{    
-   
-    
-  }
-
-}
-.hs-form-iframe .hs-form-48af09cd-021c-440c-8578-b843d962e36c_7de634e7-ca9b-474e-a3db-2508f26a1be4.hs-form .hs_email.hs-email label {
-  color: #FFFFFF !important;
-  font-weight: 400;
-}
-
-.hs-form-48af09cd-021c-440c-8578-b843d962e36c_bfc98838-15fb-4da1-86ba-b57f33e687bb .hs-form-field label:not(.hs-error-msg) span{
-  color: #fff !important;
-}
 
 
 .socail-link{
