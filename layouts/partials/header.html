@@ -2,7 +2,7 @@
 {{$headerTheme := .Params.headerTheme}}
 <!--Header-->
 <header class="{{ if not .IsHome}}hm-b70{{end}}">    
-    <nav class="navbar navbar-expand-md  fixed-top {{ if not .IsHome}} {{if $headerTheme}}navbar-light{{else}}header-scrolled{{ end }}{{ end }}">
+    <nav class="navbar navbar-expand-md  fixed-top  {{ if not .IsHome}} {{if $headerTheme}}navbar-light{{else}}header-scrolled{{ end }}{{ end }}">
       <div class="container">        
           <a class="navbar-brand" href="/" data-aos="zoom-in">
             {{ if .IsHome}}
@@ -15,11 +15,24 @@
               {{end}}
             {{ end }}            
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" 
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <!-- <span class="navbar-toggler-icon"></span> -->
             <i class="fa fa-bars"></i>
           </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse sm-mobile" id="navbarCollapse">
+
+          <div class="mobile-view d-md-none text-center">
+            <a class="navbar-brand" href="/" data-aos="zoom-in">            
+                <img src="/images/mobile-logo.svg" alt="{{.Site.Title }}"> 
+              </a>
+              
+              <p>The preferred choice for cloud and containerized environments.</p>
+
+              <p class="text-gradient">Deployed Over One Billion Times</p>
+          </div>
+
+
           <ul class="navbar-nav ml-auto" data-aos="fade-left" data-aos-delay="100">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
@@ -48,10 +61,12 @@
                   </li>
                 {{end}}
               {{ end }}              
-            {{end}}
-          
-
+            {{end}}          
           </ul>
+
+          <div class="nav-copyright">
+            © 2021 Fluent Bit. All rights reserved
+          </div>
         </div>
       </div>
     </nav>

@@ -3,10 +3,10 @@
 <section class="hero" style="order: {{$data.position}};" >
 <div class="container">
     <div class="row">
-        <div class="col-12 text-center">
-            <p data-aos="zoom-out" class="text-gradient" data-aos-delay="100">{{$data.tag | safeHTML}}</p>
-            <h1 data-aos="zoom-in" data-aos-delay="100">{{$data.heading | safeHTML}}</h1>
-            <p class="sub-heading" data-aos="zoom-in-up">{{$data.subHeading | safeHTML}}</p>
+        <div class="col-12 text-left text-md-center">
+            <p data-aos="zoom-out" class="text-gradient text-left text-md-center" data-aos-delay="100">{{$data.tag | safeHTML}}</p>
+            <h1 data-aos="zoom-in" data-aos-delay="100" class="text-left text-md-center">{{$data.heading | safeHTML}}</h1>
+            <p class="sub-heading text-left text-md-center" data-aos="zoom-in-up">{{$data.subHeading | safeHTML}}</p>
             <div class="d-flex release-btn">
                 <p class="mr-3">
                     <a href="{{$data.btnUrl | safeHTML}}" class="btn btn-gradient" data-aos="zoom-in">{{$data.btnText | safeHTML}}</a>
@@ -19,7 +19,8 @@
         </div>
         {{if $data.image}}
             <div class="col-12 text-center hero-image">
-                <img src="{{$data.image | safeHTML}}" alt="{{$data.heading | safeHTML}}">
+                <img src="{{$data.image | safeHTML}}" alt="{{$data.heading | safeHTML}}" class="mx-auto d-none d-md-block">
+                <img src="{{$data.mobileImage | safeHTML}}" alt="{{$data.heading | safeHTML}}" class="d-sm-block d-md-none">
             </div>
         {{end}}
     </div>

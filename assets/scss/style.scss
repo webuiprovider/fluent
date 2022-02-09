@@ -66,7 +66,9 @@ h6{
   text-align: center;
   text-transform: capitalize;
 }
-
+.nav-copyright{
+  display: none;
+}
 .lg-font{
   font-style: normal;
   font-weight: normal;
@@ -106,6 +108,7 @@ header{
       width: 136px;
       padding-top: 0rem;
       padding-bottom: 0.7525rem;
+      min-height: 56px;
     }
 
     .nav-item{
@@ -332,7 +335,7 @@ header{
     min-width: 14%;
     align-items: center;
     text-align: center;
-    margin: 30px 0px;
+    // margin: 30px 0px;
   }
 }
 

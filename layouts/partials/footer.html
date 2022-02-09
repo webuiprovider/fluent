@@ -69,7 +69,7 @@
                         </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-4 footer-link d-flex align-items-center justify-content-center f-bod mt-3 mt-sm-0">
+            <div class="col-md-6 col-sm-4 footer-link d-none d-md-flex align-items-center justify-content-center f-bod mt-3 mt-sm-0">
                 {{range .Site.Data.footer}}
                     {{if eq .linkHeading "Download"}}
                     <div class="ml-3">                            
@@ -80,7 +80,7 @@
                     {{end}}
                 {{end}}
             </div>
-            <div class="col-md-3 col-sm-4 ">
+            <div class="col-md-3 col-sm-4 d-none d-md-block">
                 <div class="footer-right new-footer pl-0 pl-md-3 align-items-center">
                     <div class="text-center text-md-left">
                         <img src="{{.Site.Params.footer_logo}}" alt="{{.Site.Title}}">

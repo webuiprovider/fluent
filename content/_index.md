@@ -14,6 +14,7 @@ hero:
   noteText: Read the notes »
   noteUrl: "/announcements/"
   image: "/images/hero.svg"
+  mobileImage: "/images/hero-m.svg"
 howitworks: 
   enabled: true
   position: 5

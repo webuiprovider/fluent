@@ -72,6 +72,23 @@
   
   
 @media (max-width: 767.98px) {
+  .navbar .navbar-collapse.collapse.show::before{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: relative;
+    height: 100vh;
+    background: url(/images/mobile-bg.svg) #282E38;
+    background-repeat: no-repeat;
+    content: "";
+    top: 0px;
+    width: calc(100% + 30px);
+    left: 0px;
+    position: fixed;
+    z-index: -1;
+    background-size: 100%;
+  }
 
     .top-sec {
         padding-top: 70px;
@@ -130,23 +147,44 @@
     .py-xs-50{
       padding: 50px 0px;
     }
-    .hero h1{
-      font-size: 36px;
-      line-height: 45px;
+    .hero{    
+      h1{
+        font-size: 42px;
+        line-height: 50px;
+      }
+      .sub-heading{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .release-btn{
+        flex-direction: column;
+        p{
+          width: 100%;
+          margin-bottom: 0px;
+          .btn-gradient{
+            display: block;
+          }
+        }
+      }
     }
-    .hero .sub-heading{
-      font-weight: 400;
-      line-height: 34px;
-      font-size: 14px;
+    .how-it-works {      
+      .btn-gradient{
+        display: block;
+      }
+      h4{
+        font-size: 24px;  
+      }
+
     }
-    .how-it-works h4{
-      font-size: 22px;
-    }
+    
+    
     .section-heading {
       h4{
-      font-size: 22px;
-      line-height: 24px;
+      font-size: 18px;
+      line-height: 21px;
       margin-bottom: 20px;
+      font-weight: 500;
       }
   
       h5{
@@ -156,20 +194,24 @@
     }
   
     .brand-list li{
-      margin: 15px 0px;
+      margin: 0 0px;
+      padding: 0px;
+      width: 25%;
     }
   
     .performance-list{
-      align-items: center;
+      align-items: left;
+      margin-bottom: 40px;
       .icon {
-        justify-content: center;
+        // justify-content: center;
+        margin-bottom: 5px;
       }
       .heading{
-        text-align: center;
+        text-align: left;
   
         &:after{
           right: 0px;
-          margin: auto;
+          margin: 0px;
         }
         p{
           text-align: center;
@@ -194,11 +236,17 @@
     } 
     .cta-boxed{
       .testi-info{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 22px;
   
         &::after{
           bottom: -35%;
+          top: -10%;
+        }
+
+        .test-highlight{
+          font-size: 16px;
+          line-height: 19px;
         }
       }
     }
@@ -252,9 +300,11 @@
     .animation-area{
       overflow-x: hidden;
       img{
-        margin-left: -15%;
-        max-width: 130%;  
-        display: none; 
+        margin-left: -13%;
+        max-width: 120%;
+        position: absolute;
+        left: 0px;
+
       }   
       .ani-text{
             background: #282E38;
@@ -267,12 +317,33 @@
             top: 0px;
             width: 100%;
             min-height: 301px;
-            margin-bottom: 70px;
+            margin: 20px auto 70px;
             padding: 10px 8px 10px 15px;
   
             #typewriter{
                 margin-left: -49%;
                 font-family: 'Space Mono', monospace;
+            }
+
+            &::before{
+              background: #282E38;
+              mix-blend-mode: normal;
+              border: 2.6378px solid rgba(255, 255, 255, 0.36);
+              box-shadow: 0px 65.9449px 52.7559px rgba(0, 0, 0, 0.07), 0px 27.5502px 22.0402px rgba(0, 0, 0, 0.0503198), 0px 14.7297px 11.7837px rgba(0, 0, 0, 0.0417275), 0px 8.25732px 6.60586px rgba(0, 0, 0, 0.035), 0px 4.3854px 3.50832px rgba(0, 0, 0, 0.0282725), 0px 1.82486px 1.45989px rgba(0, 0, 0, 0.0196802);
+              backdrop-filter: blur(2.6378px);
+
+              /* Note: backdrop-filter has minimal browser support */
+              border-radius: 4px;
+              content: "";
+              position: absolute;
+              left: -10px;
+              top: -10px;
+              z-index: -1;
+              width: 100%;
+              height: 100%;
+
+              display: none;
+          
             }
         }      
     }
@@ -356,5 +427,85 @@
         margin-left: 8%;
         max-width: 46%;
       }
+    }
+
+    .navbar-collapse.sm-mobile{
+      .nav-item
+      {
+        width: 100%;
+        display: block;
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+        text-align: center;
+
+        .nav-link, .dropdown-item{
+          color: #fff;
+          font-size: 16px;
+         line-height: 22px;
+
+            img {
+              content: url(/images/slack-w.svg);
+          }
+        }
+
+
+
+      }
+        
+    }
+    .mobile-view    {
+      padding: 50px 0px;
+      a.navbar-brand{
+        img{          
+          display: block !important;
+        }
+      }
+
+      p{
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-top: 20px;
+      }
+    }
+  
+
+    .header-sm{
+      .navbar-toggler{
+        background: linear-gradient(124.58deg, #3D65AF -71.92%, #2372B8 -32.03%, #00B8BB 57.79%);
+        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &.font-class i::before{
+          content: "\f00d";
+        }
+      }
+      a.navbar-brand{
+        img{
+          
+        display: none;
+        }
+      }
+      .nav-copyright{
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        /* grad */
+        background: linear-gradient(124.58deg, #3D65AF -57.52%, #2372B8 3.4%, #00B8BB 99.76%);
+        position: absolute;
+        top: 97vh;
+        width: 91%;
+        margin: auto;
+        color: #FFFFFF;
+        font-size: 13px;
+        line-height: 24px;
+      }
+
     }
 }
