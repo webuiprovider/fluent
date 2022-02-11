@@ -6,7 +6,7 @@
         <div class="col-12 text-left text-md-center">
             <p data-aos="zoom-out" class="text-gradient text-left text-md-center" data-aos-delay="100">{{$data.tag | safeHTML}}</p>
             <h1 data-aos="zoom-in" data-aos-delay="100" class="text-left text-md-center">{{$data.heading | safeHTML}}</h1>
-            <p class="sub-heading text-left text-md-center" data-aos="zoom-in-up">{{$data.subHeading | safeHTML}}</p>
+            <p class="sub-heading text-left text-md-center" data-aos="zoom-in-up">{{$data.subHeading | markdownify}}</p>
             <div class="d-flex release-btn">
                 <p class="mr-3">
                     <a href="{{$data.btnUrl | safeHTML}}" class="btn btn-gradient" data-aos="zoom-in">{{$data.btnText | safeHTML}}</a>

@@ -157,6 +157,12 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
+
+$(document).on('click', '.navbar-toggler', function (e) {
+
+$("header").toggleClass("header-sm");
+$(this).toggleClass("font-class");
+}); 
 </script>
 
 

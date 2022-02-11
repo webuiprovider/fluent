@@ -4,10 +4,12 @@
         <div class="container">
             <div class="row top-overview py-100 pb-5">
                 <div class="col-12 text-center">
-                    <h5>{{.Params.hero.desc | safeHTML}} </h5>
-                    <h2 class="my-3">{{.Params.hero.heading  | safeHTML }}</h2>
-                    <img src="{{.Params.hero.image}}" alt="{{.Params.hero.heading}}" class="img-fluid mb-4">
-                    <h6>{{.Params.hero.text | markdownify | safeHTML}}</h6>
+                    <h5 class="text-left text-md-center">{{.Params.hero.desc | markdownify }} </h5>
+                    <h2 class="my-3 text-left text-md-center">{{.Params.hero.heading  | markdownify }}</h2>
+                    <img src="{{.Params.hero.image}}" alt="{{.Params.hero.heading}}" class="mx-auto d-none d-md-block img-fluid mb-4">
+                    <img src="{{.Params.hero.mobileImage}}" alt="{{.Params.hero.heading}}" class="d-sm-block d-md-none img-fluid mb-4">
+
+                    <h6 class="text-left text-md-center">{{.Params.hero.text | markdownify }}</h6>
                 </div>
             </div> 
               

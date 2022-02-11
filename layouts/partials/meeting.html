@@ -2,14 +2,14 @@
 {{$data := .Params.meeting }}
 
 {{ if $data.enabled }}
-<section class="section enterprise mt-0 py-0" style="order: {{$data.position}};">
+<section class="section enterprise community mt-0 py-0" style="order: {{$data.position}};">
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-12">
                 <div class="list-box rounded-0">
                     <div class="box-bg text-center rounded-0 body-bg">
                         <h4 data-aos="zoom-in" class="text-gradient">{{$data.title}}</h4>
-                        <p class="mb-5">{{$data.description}}</p>
+                        <p class="mb-5 text-left text-md-center">{{$data.description}}</p>
                         <a href="{{$data.buttonUrl}}" target="{{$data.tabOpen}}" class="btn btn-gradient">{{$data.buttonText}}</a>
                     </div>
                 </div>
