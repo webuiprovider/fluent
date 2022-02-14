@@ -50,6 +50,12 @@
 
             .box-bg{
                 background: #fafbfc;
+
+                p{
+                    font-weight: 300;
+                    font-size: 17px;
+                    line-height: 20px;
+                }
             }
             .logo-area{
                 background: transparent;
@@ -61,6 +67,23 @@
                 min-height: 155px;
                 flex-direction: column;
             }
+        }
+
+        &.meeting{
+            .list-box{
+                h4{
+                    text-align: center;
+                    font-size: 32px;
+                    line-height: 38px;
+                }
+                p{
+                    font-size: 22px;
+                    line-height: 24px;
+                    text-align: center;
+                }
+            }
+
+
         }
     }
 }

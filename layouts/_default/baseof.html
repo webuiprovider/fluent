@@ -2,7 +2,11 @@
 <html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-us{{ end }}" >
 {{ partial "head.html" . }}
 <body>
-  <div class="wrapper">    
+
+  {{ $filename :=   .File.ContentBaseName |   lower }}
+
+
+  <div class="wrapper" id='{{$filename }}'>    
     {{- block "main" . }}{{- end }}
   </div>  
   {{- partial "footer.html" . -}}  

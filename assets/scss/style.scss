@@ -1320,6 +1320,9 @@ header{
     text-align: center;
     mix-blend-mode: normal;
     color: #FAFBFC;
+    max-width: 48%;
+    margin-left: auto;
+    margin-right: auto;
   }
   h2{
     font-weight: normal;
@@ -1341,6 +1344,9 @@ header{
     line-height: 28px;
     text-align: center;
     color: #F9FAFB;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .preferred{
@@ -1741,6 +1747,7 @@ header{
 .highlight>div{
   padding: 10px
 }
+
 
 .cta .cta-info .subscribe.input-group .hbspt-form iframe.hs-form-iframe { background: #089ba4 !important;}
 .hs-form-48af09cd-021c-440c-8578-b843d962e36c_4bcbd8e6-f47f-4b91-8479-a0d9ae216d32 .hs-form-field label:not(.hs-error-msg) {color: #fff !important;}

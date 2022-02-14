@@ -30,6 +30,11 @@
       font-size: 18px;
     }
   }
+
+  .latest-ver .ver-box .info
+  {
+    padding: 25px 45px;
+  }
   .brand-list li{
     margin:5px 0px;
   }
@@ -103,16 +108,80 @@
         column-count: 2;
     }
     .overview{
+      background-position: -5% 0%;
+      background-image: url(/images/howtowork-sm-bg.svg);
+      background-size: 100%;
+
       .top-overview {
         h2{
           font-size: 42px;
+        }
+        h5{
+          max-width: 80%;
+        }
+        h6{
+          max-width: 100%;
         }
       }
       .preferred{
         padding: 50px;
       }
+
+  
+      .history {
+        background: linear-gradient(124.58deg, #3D65AF -57.52%, #2372B8 3.4%, #00B8BB 99.76%);
+        mix-blend-mode: normal;
+        backdrop-filter: blur(20px);
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 4px;
+
+        .info{
+          margin: 0px;
+          padding: 0px;
+          margin-top: -50px;
+          background: transparent;
+        }
+  
+        
+        h4{
+          font-size: 22px;
+          text-align: center;
+        }
+        .his-img:before{
+          border-radius: 4px;
+          padding: 2px;
+          border: 2px;
+        }
+
+      }
+    
+      
+    }
+
+   
+
+    .features-list .list-box.howtoworks{
+      padding: 25px 15px;
+    }
+
+    .enterprise .list-box .box-bg{
+      padding: 15px;
     }
     
+
+    .enterprise.community{
+      .list-box{
+        h4{
+          font-size: 30px;
+        }
+        p{
+          font-size: 16px;
+        }
+      }
+    } 
 }
   
   
@@ -140,7 +209,8 @@
     padding-top: 70px;
     padding-bottom: 45px;
     h5{
-      font-size: 16px;
+      font-size: 18px;
+      max-width: 100%;
     }
     h6{
         font-size: 18px;
@@ -159,7 +229,7 @@
       background: transparent;
       .logo-area{
           min-height: 150px;
-          margin-bottom: 15px;
+          margin-bottom: 50px;
           width: 100%;
       }
       h4{
@@ -486,6 +556,10 @@
   
   .top-overview{
     padding: 50px 0px;
+     h5{
+       max-width: 96%;
+       margin-left: 0px;
+     }
       h2{
         font-size: 32px;
         line-height: 42px;
@@ -493,6 +567,7 @@
       h6{
         font-weight: 300;
         font-size: 18px;
+        max-width: 100%;
       }
     }
   
@@ -645,6 +720,35 @@
     .features .section-heading h5{
       max-width: 100%;
     }
+
+    .enterprise.community{
+      .list-box{
+        h4{
+          font-size: 18px;
+          line-height: 21px;
+          text-align: left;
+        }
+        p{
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      &.meeting{
+        .list-box{
+            h4{
+                text-align: left !important;
+                font-size: 18px;
+                line-height: 21px;
+            }
+            p{
+              font-size: 16px;
+              line-height: 24px;
+                text-align: left;
+            }
+        }
+      }
+    } 
 }
 
 
