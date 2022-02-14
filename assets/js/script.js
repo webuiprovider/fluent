@@ -264,6 +264,6 @@ jQuery(function ($) {
 
  $(document).on('click', '.navbar-toggler', function (e) {
 
-			$("header").toggleClass("header-sm");
+			$(".wrapper").toggleClass("header-sm");
 			$(this).toggleClass("font-class");
 }); 

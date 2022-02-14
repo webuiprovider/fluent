@@ -4,11 +4,12 @@ description: ''
 hero:  
   enabled: true
   position: 1
-  heading: An End to End <br>  Observability Pipeline
+  heading: |
+   An End to End
+   Observability Pipeline
   tag: "Deployed Over One Billion Times"
   subHeading: |
-   Fluent Bit is a super fast, lightweight, and highly scalable logging and metrics processor and\
-   forwarder.  It is the preferred choice for cloud and containerized environments.
+   Fluent Bit is a super fast, lightweight, and highly scalable logging and metrics processor and forwarder.  It is the preferred choice for cloud and containerized environments.
   btnText: DOWNLOAD NOW
   btnUrl: "https://docs.fluentbit.io/manual/installation/getting-started-with-fluent-bit"
   version: v1.8.12 
@@ -40,8 +41,7 @@ performance:
   sectionId: "performance"
   heading: Designed with performance in mind
   subHeading: |
-   A robust, lightweight, and portable architecture for high throughput with low CPU and memory usage\
-   from any data source to any destination.
+   A robust, lightweight, and portable architecture for high throughput with low CPU and memory usage from any data source to any destination.
   lists:
   - heading: Scalable
     icon: /images/scalable.svg
@@ -112,7 +112,8 @@ features:
   enabled: true
   position: 5
   heading: The Fluent Bit Advantage
-  subHeading:  Fluent Bit is purpose built for high scale data observability <br> in any dynamic, distributed environment
+  subHeading: |
+   Fluent Bit is purpose built for high scale data observability in any dynamic, distributed environment
   lists: true
 cta:
   enabled: true

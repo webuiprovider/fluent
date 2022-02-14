@@ -3,17 +3,63 @@
 
 
 @media (max-width: 992px) {
-    .cta{
-      background-size: 100% 108%;
+  
+  header .navbar .nav-item .nav-link, header .navbar .nav-item .dropdown-item{
+    padding: 0.3rem;
+    white-space: nowrap;
+    font-size: 11px;
+  }
+  header .navbar .navbar-brand{
+    width: 110px;
+  }
+
+  .hero{
+    h1{
+      font-size: 65px;
+      max-width: 100%;
     }
-    .brand-list li{
-      margin:15px 0px;
+    .sub-heading{
+      font-size: 16px;
     }
+  }
+  .section-heading{
+    h4{
+      font-size: 20px;
+    }
+    h5{
+      font-size: 18px;
+    }
+  }
+  .brand-list li{
+    margin:5px 0px;
+  }
+  .ani-text{
+    width: 71%;
+    left: 5%;
+    margin: 0px auto;
+    top: 12%;
+    margin-bottom: 20%;
+  }
+
+   .cta{
+      background-size: 150% 108%;
+
+      .cta-info{
+        width: 38%;
+      }
+    }
+    
   
     .footer-link{
       margin-bottom: 20px;
     }
-  
+    .fot-logo{
+      display: none !important;
+    }
+    footer .copyright .copy-info{
+      text-align: center;
+    }
+
     .high-performance {
       position: relative;
       z-index: 11;
@@ -90,91 +136,88 @@
     background-size: 100%;
   }
 
-    .top-sec {
-        padding-top: 70px;
-        padding-bottom: 45px;
-        h5{
-          font-size: 16px;
-        }
-        h6{
-            font-size: 18px;
-        }
-        .lg-font{
-          text-align: left;
-        }
-    }
-    .lg-font {
-        font-size: 46px;
-        line-height: 53px;
-    }
-
-    .enterprise{
-        .list-box{
-          background: transparent;
-            .logo-area{
-                min-height: 150px;
-                margin-bottom: 15px;
-                width: 100%;
-            }
-            h4{
-              line-height: 21px;
-              font-size: 18px;
-            }
-            p{
-              font-size: 16px;
-            }
-            .btn-gradient{
-              display: block;
-            }
-        }
-
-        &.community{
-            .list-box{
-              background: -webkit-linear-gradient(124.58deg,rgba(61,101,175,.45) -57.52%,rgba(35,114,184,.45) 3.4%,rgba(0,184,187,.45) 99.76%);
-                .logo-area{
-                    min-height: initial;
-                }
-            }
-            
-        }
-
-       
-    } 
-
-
-
-    footer{
-        .footer-link .btn-primary{
-            padding: 20px 32px;
-        }
-        .foot-top{
-            padding-bottom: 30px;
-        }
-        .footer-right.new-footer{
-
-        }
-       .copyright .copy-info{
-           text-align: center;
-       }
-
-    } 
-  
+  .top-sec {
+    padding-top: 70px;
+    padding-bottom: 45px;
     h5{
-      font-size: 18px;
+      font-size: 16px;
     }
-    .py-xs-50{
-      padding: 50px 0px;
+    h6{
+        font-size: 18px;
     }
+    .lg-font{
+      text-align: left;
+    }
+  }
+  .lg-font {
+      font-size: 46px;
+      line-height: 53px;
+  }
+
+  .enterprise{
+    .list-box{
+      background: transparent;
+      .logo-area{
+          min-height: 150px;
+          margin-bottom: 15px;
+          width: 100%;
+      }
+      h4{
+        line-height: 21px;
+        font-size: 18px;
+      }
+      p{
+        font-size: 16px;
+      }
+      .btn-gradient{
+        display: block;
+      }
+    }
+
+    &.community{
+        .list-box{
+          background: -webkit-linear-gradient(124.58deg,rgba(61,101,175,.45) -57.52%,rgba(35,114,184,.45) 3.4%,rgba(0,184,187,.45) 99.76%);
+            .logo-area{
+                min-height: initial;
+            }
+        }      
+    }   
+  } 
+
+  footer{
+    .footer-link .btn-primary{
+        padding: 20px 32px;
+    }
+    .foot-top{
+        padding-bottom: 30px;
+    }
+    .footer-right.new-footer{
+
+    }
+    .copyright .copy-info{
+        text-align: center;
+    }
+  } 
+  
+  h5{
+    font-size: 18px;
+  }
+  .py-xs-50{
+    padding: 50px 0px;
+  }
     .hero{    
       h1{
         font-size: 42px;
         line-height: 50px;
         width: 100% !important;
+        max-width: 100%;
       }
       .sub-heading{
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
+        max-width: 90%;
+        margin-left: 0px;
       }
       .release-btn{
         flex-direction: column;
@@ -215,7 +258,13 @@
     .brand-list li{
       margin: 0 0px;
       padding: 0px;
-      width: 25%;
+      width: 33.3%;
+    }
+
+    #performance{
+      h5{
+        max-width: 100%;
+      }
     }
   
     .performance-list{
@@ -248,7 +297,7 @@
         }
     }  
     .cta{
-      background-image: none !important;
+      background-size: 200% 150%;
       .cta-info{
         width: 90%;
       }
@@ -340,18 +389,19 @@
             mix-blend-mode: normal;
             border: 2px solid rgba(255,255,255,.36);
             box-shadow: 0px 50px 40px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
-            border-radius: 16px;
+            border-radius: 8px;
             position: relative;
             left: 0px;
             top: 0px;
             width: 95%;
-            min-height: 301px;
+            min-height: 280px;
             margin: 20px auto 70px;
-            padding: 15px 8px 10px 20px;
+            padding: 5px 8px 10px 20px;
   
             #typewriter{
-                margin-left: -49%;
-                font-family: 'Space Mono', monospace;
+                margin-left: -45%;
+                font-size: 9px;
+                line-height: 0.8em;
             }
 
             &::before{
@@ -591,4 +641,10 @@
       }
 
     }
+
+    .features .section-heading h5{
+      max-width: 100%;
+    }
 }
+
+

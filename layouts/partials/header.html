@@ -1,7 +1,7 @@
 
 {{$headerTheme := .Params.headerTheme}}
 <!--Header-->
-<header class="{{ if not .IsHome}}hm-b70{{end}}">    
+<header class="header {{ if not .IsHome}}hm-b70{{end}}">    
     <nav class="navbar navbar-expand-md  fixed-top  {{ if not .IsHome}} {{if $headerTheme}}navbar-light{{else}}header-scrolled{{ end }}{{ end }}">
       <div class="container">        
           <a class="navbar-brand" href="/" data-aos="zoom-in">
