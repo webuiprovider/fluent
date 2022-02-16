@@ -13,7 +13,22 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row d-sm-block d-md-none">
+            <div class="col-12">
+              
+                <div class="slider slider-for">
+                    {{$brand := .Site.Data.brand}} 
+               
+                    
+                    {{ range $brand  }}
+                        <div><img src="{{.logo}}" alt="{{.name}}"> {{.Weight}}</div>
+                    {{end}}
+               
+                
+                  </div>
+            </div>
+        </div>
+        <div class="row d-none d-md-block">
             <div class="col-12"> 
                 {{$brand := .Site.Data.brand}} 
                 <ul class="brand-list" data-aos="zoom-in">

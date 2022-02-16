@@ -176,12 +176,43 @@ jQuery(function ($) {
 	/*	Testimonial Carousel
 	/* =========================================================================  */
 
-	$("#testimonials").slick({
-		infinite: true,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 4000
-	});
+	// $("#testimonials").slick({
+	// 	infinite: true,
+	// 	arrows: false,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 4000
+	// });
+
+
+	
+
+	//   $(".slider").slick({
+
+	// 	infinite: false,
+	  
+	// 	responsive: [{
+	  
+	// 		breakpoint: 1024,
+	// 		settings: {
+	// 		  slidesToShow: 3,
+	// 		  infinite: true
+	// 		}
+	  
+	// 	  }, {
+	  
+	// 		breakpoint: 600,
+	// 		settings: {
+	// 		  slidesToShow: 2,
+	// 		  dots: true
+	// 		}
+	  
+	// 	  }, {
+	  
+	// 		breakpoint: 300,
+	// 		settings: "unslick" // destroys slick
+	  
+	// 	  }]
+	//   });
 
 	/* ========================================================================= */
 	/*	animation scroll js
@@ -267,3 +298,19 @@ jQuery(function ($) {
 			$(".wrapper").toggleClass("header-sm");
 			$(this).toggleClass("font-class");
 }); 
+
+
+$(document).ready(function(){
+	$('.slider').slick({
+	slidesToShow: 2,
+	dots:false,
+	// centerMode: true,
+	infinite: true,
+	arrows: false,
+	autoplay: true,
+	autoplaySpeed: 4000
+	});
+
+
+
+  });

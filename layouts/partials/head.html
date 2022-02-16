@@ -25,6 +25,9 @@
 	<!-- <link rel="stylesheet" href="/aos/aos.css" /> -->
 	<!-- Link Swiper's CSS -->
 	 <!-- <link rel="stylesheet" href="/js/swiper-bundle.min.css"> -->
+	 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 
 	{{ $syntax := resources.Get "scss/syntax.css" | resources.ExecuteAsTemplate "style.scss" . | toCSS }}
     <link rel="stylesheet" href="{{ ($syntax | minify | fingerprint).RelPermalink  }}">

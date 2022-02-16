@@ -682,8 +682,7 @@
 
     .header-sm{
       .navbar-toggler{
-        background: linear-gradient(124.58deg, #3D65AF -71.92%, #2372B8 -32.03%, #00B8BB 57.79%);
-        
+        background: linear-gradient(124.58deg, #3D65AF -71.92%, #2372B8 -32.03%, #00B8BB 57.79%);        
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
@@ -707,12 +706,13 @@
         background: linear-gradient(124.58deg, #3D65AF -57.52%, #2372B8 3.4%, #00B8BB 99.76%);
         position: absolute;
         top: 97vh;
-        width: 91%;
+        width: 100%;
         margin: auto;
         color: #FFFFFF;
         font-size: 13px;
         line-height: 24px;
         text-align: center;
+        left: 0px;
       }
 
     }
