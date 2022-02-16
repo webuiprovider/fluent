@@ -8,7 +8,7 @@ email = ""
 logo = "/images/logo.svg"
 logo2 = "/images/logo-white.svg"
 footer_logo = "/images/footer-logo.svg"
-copyright = "© 2022 Fluent Bit. All rights reserved"
+copyright = "© 2015-2022 The Fluent Bit Authors. Fluent Bit is a CNCF sub-project under the umbrella of Fluentd"
 lastVersion = "v1.8.12"
 releasedOn = "Jan 24, 2022"
 	         	         
