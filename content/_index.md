@@ -15,7 +15,7 @@ hero:
   version: v1.8.12 
   releasedDate: Jan 24, 2022
   noteText: Read the notes »
-  noteUrl: "/announcements/"
+  noteUrl: "/announcements/v1.8.12"
   image: "/images/hero.svg"
   mobileImage: "/images/hero-m.svg"
 howitworks: 
