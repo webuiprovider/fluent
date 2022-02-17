@@ -1,5 +1,5 @@
 ---
-title: 'Multiline log parsing with Fluent Bit'
+title: 'Multiline logging with with Fluent Bit'
 date: "2020-12-15"
 description: "Learn about how to handle multiline logging with Fluent Bit with suggestions and an example of multiline parser"
 image: "/images/Multiline log parsing with Fluent Bit.jpg"
