@@ -1,5 +1,5 @@
 ---
-title: '3 Common Architecture Patterns with Fluentd and Fluent Bit'
+title: 'Common Architecture Patterns with Fluentd and Fluent Bit'
 date: "2020-12-03"
 description: "Learn common ways to deploy Fluent Bit and Fluentd. Including forwarder-aggregator, side-car/agent, and network device aggregator pattern"
 image: "/images/3 Common Architecture Patterns with Fluentd and Fluent Bit.jpg"
