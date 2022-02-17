@@ -1,3 +1,4 @@
+largeScreen:
 - logo: "/images/brands/google-cloud.svg"
   name: "G cloud"
   weight: 1
@@ -58,3 +59,9 @@
 - logo: "/images/brands/giant-swarm.svg"
   name: "gaintswarm"
   weight: 13
+
+mobileLogo:
+- logo: "/images/logos-slide1.png"
+  name: "slide1"
+- logo: "/images/logos-slide2.png"
+  name: "slide2"

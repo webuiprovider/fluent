@@ -99,8 +99,8 @@ releasedOn = "Jan 24, 2022"
 
 
 [permalinks]
-    # posts = "blog/:year/:month/:title/"
-    posts = "blog/:title/"
+    posts = "blog/:year/:month/:day/:title/"
+    # posts = "blog/:title/"
     pages = ":slug/"
 
 
