@@ -22,4 +22,12 @@ enterprise:
     buttonUrl: "https://fluentd.ctc-america.com/"
     buttonText: "read More"
     tabOpen: "_blank"
+  - title: ClearCode
+    description: >
+      ClearCode is a core maintainer of Fluentd since 2014, based in Japan.  
+      クリアコードは、日本国内において航空会社、官公庁、通信事業者をはじめとした大規模ユーザーに対する支援を行ってきました。 ご相談にはFluentd/Fluent Bitのコアメンテナが対応いたしますので、まずはお気軽にお問い合わせください。
+    logo: /images/ClearCode.svg
+    buttonUrl: "https://www.clear-code.com/services/fluentd.html"
+    buttonText: "read More"
+    tabOpen: "_blank"
 ---
