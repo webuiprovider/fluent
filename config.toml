@@ -9,8 +9,8 @@ logo = "/images/logo.svg"
 logo2 = "/images/logo-white.svg"
 footer_logo = "/images/footer-logo.svg"
 copyright = "© 2015-2022 The Fluent Bit Authors. Fluent Bit is a CNCF sub-project under the umbrella of Fluentd"
-lastVersion = "v1.8.13"
-releasedOn = "Mar 01, 2022"
+lastVersion = "v1.9.0"
+releasedOn = "Mar 11, 2022"
 
    [menu]
     [[menu.main]]
@@ -56,8 +56,8 @@ releasedOn = "Mar 01, 2022"
     
     [params.latestVer]
     light = "true"
-    heading = "Fluent Bit v1.8.13 is out!"
-    subHeading = "New release on Mar 01, 2022,"
+    heading = "Fluent Bit v1.9.0 is out!"
+    subHeading = "New release on Mar 11, 2022,"
     text = "Check out the Release Notes, read the Updated Documentation or jump directly to the Downloads Section."
     smallText = "We are part of a wide community, <strong>no vendor lock-in.</strong>"
     btnText = "Download Now"
