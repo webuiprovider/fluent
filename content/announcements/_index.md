@@ -12,7 +12,7 @@ latestVer: true
 
 ### Release Notes v1.9.1
 
-[Fluent Bit](https://fluentbit.io) is a Fast and Lightweight Data Processor and Forwarder for Linux, BSD and OSX. We are proud to announce the availability of **Fluent Bit v1.9.0**.
+[Fluent Bit](https://fluentbit.io) is a Fast and Lightweight Data Processor and Forwarder for Linux, BSD and OSX. We are proud to announce the availability of **Fluent Bit v1.9.1**.
 
 For people upgrading from previous versions you **must read** the Upgrading Notes section of our documentation:
 
@@ -20,7 +20,7 @@ For people upgrading from previous versions you **must read** the Upgrading Note
 
 #### News
 
-[Fluent Bit](https://fluentbit.io) v1.9.0 is the stable release!, new changes on this version:
+[Fluent Bit](https://fluentbit.io) v1.9.1 is the stable release!, new changes on this version:
 
 - __Core__
    - engine: print to log Fluent Bit version and Git commit
