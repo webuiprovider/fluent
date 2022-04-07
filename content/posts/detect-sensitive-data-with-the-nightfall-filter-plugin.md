@@ -7,6 +7,8 @@ author: "Victor Chen"
 
 ---
 
+The Nightfall team contributed this plugin and it is now available in Fluent Bit >= 1.9.1.
+
 ##### Introduction
 
 Sensitive data often makes its way into [logs](https://nightfall.ai/how-does-sensitive-information-end-up-in-observability-platforms). Though most of the time unintentional, these incidents have the potential to do a lot of damage, as they usually involve exposure of API keys, passwords, and customer data that can give attackers access to critical business data or put companies at compliance risk. This is why it’s important for organizations to be proactive about securing their logs. Because [identifying sensitive data](https://nightfall.ai/why-detecting-sensitive-data-is-hard) is not an easy task, Nightfall built a plugin for Fluent Bit. In this tutorial, we will go over how to set up Fluent Bit and the Nightfall plugin to process, forward, and secure your logs.
