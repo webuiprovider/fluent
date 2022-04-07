@@ -87,7 +87,7 @@ Here is more information on each configurable parameter in the Nightfall filter 
 Now we can start up Fluent Bit with the Nightfall plugin by mounting the configuration file with:
 
 ```
-docker run --rm -v <PATH_TO_CONFIG_FILE>:/fluent-bit/etc/fluent-bit.conf -p 8000:8000 -p 5170:5170 -p 5200:5200 nightfallai/fluent-bit:1.9.0-with-nightfall
+docker run --rm -v <PATH_TO_CONFIG_FILE>:/fluent-bit/etc/fluent-bit.conf -p 8000:8000 -p 5170:5170 -p 5200:5200 fluent/fluent-bit
 ```
 
 Now we can feed Fluent Bit some data using HTTP and netcat:
