@@ -63,7 +63,11 @@
                             <p class="mb-2 d-inline mr-2"><strong>Stay Updated</strong></p>    
                             <ul class="socail-link  d-inline">
                                 {{range .Site.Params.social }}
-                                    <li><a href="{{.url}}" target="_blank"><img src="{{.icon}}" alt=""></a></li>
+                                    <li>
+                                        <a href="{{.url}}" target="_blank" aria-label="social link">
+                                            <img src="{{.icon}}" alt="">
+                                        </a>
+                                    </li>
                                 {{end}}
                             </ul>
 
