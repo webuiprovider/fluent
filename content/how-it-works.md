@@ -1,10 +1,10 @@
 ---
 title: 'How It Works'
-description: 'Works for Logs and Metrics'
+description: 'Works for Logs, Metrics and Traces'
 type: how-it-works
 hero:
  heading: |
-  Works for Logs and Metrics
+  Works for Logs, Metrics & Traces
  desc: |
   Fluent Bit was designed for speed, scale, and flexibility in a very lightweight, efficient package.
  image: "/images/overview-new.svg"
